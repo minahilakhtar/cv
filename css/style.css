@@ -11883,6 +11883,7 @@ img {
     }
 
     #menu-btn {
+        padding-left: 25px;
         display: block;
         position: relative;
         float: right
