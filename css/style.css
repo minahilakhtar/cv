@@ -736,7 +736,7 @@ header:not(.header-mobile) #mainmenu>li:hover ul.mega {
 #menu-btn:before {
     font-family: FontAwesome;
     content: "\f0c9";
-    font-size: 20px;
+    font-size: 30px;
     color: #ffffff;
 }
 
