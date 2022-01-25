@@ -12802,9 +12802,3 @@ body.de_light::-webkit-scrollbar-thumb {
 }
 
 
-@media only screen and (min-width: 769px) and (min-width:991px) {
-    .post-content div:first-child{
-        width: 330px; height: 255px; 
-    }
-    
-}
