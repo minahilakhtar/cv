@@ -12801,4 +12801,7 @@ body.de_light::-webkit-scrollbar-thumb {
   background-color: #dddddd;
 }
 
-
+@media only screen and (max-width: 345px)
+header div#logo {
+    line-height: 31px;
+}
