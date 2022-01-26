@@ -12805,3 +12805,9 @@ body.de_light::-webkit-scrollbar-thumb {
 header div#logo {
     line-height: 31px;
 }
+
+@media only screen and (min-width: 766px)
+.first-c {
+    width: 291px;
+    height: 228px;
+}
