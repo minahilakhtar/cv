@@ -12802,7 +12802,7 @@ body.de_light::-webkit-scrollbar-track {
 body.de_light::-webkit-scrollbar-thumb {
   background-color: #dddddd;
 }
-@media only screen and (min-width: 1748px){
+@media only screen and (min-width: 1000px){
     .typed-words{
     color: #000 !important;
     }
