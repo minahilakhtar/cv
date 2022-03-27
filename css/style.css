@@ -12804,7 +12804,7 @@ body.de_light::-webkit-scrollbar-thumb {
 }
 @media only screen and (min-width: 1748px){
     .typed-words{
-    color: #000;
+    color: #000 !important;
     }
 }
 @media only screen and (min-width: 766px)
