@@ -67,11 +67,7 @@ header {
 header.smaller.has-topbar {
     height: 105px
 }
-main-bg{
-    
- background-blend-mode: multiply; 
- background-color: #8687846b;
-}
+
 header.header-s1 {
     top: 0
 }
