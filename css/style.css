@@ -167,7 +167,8 @@ header div#logo {
 }
 
 header div#logo a {
-    color: #000;
+    color: #fff;
+    font-size: 35px;
 }
 
 header.header-mobile div#logo a {
