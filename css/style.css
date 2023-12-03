@@ -270,7 +270,7 @@ header.smaller.scroll-light #mainmenu li li a:hover {
 }
 #section-main{
         background-blend-mode: multiply;
-        background-color: #54545457;
+        background-color: #00000069 !important;
 }
 
 .logo-smaller div#logo img {
