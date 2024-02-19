@@ -12822,8 +12822,13 @@ body.de_light::-webkit-scrollbar-thumb {
     width: 328px;
     height: 257px;
 }
-
 }
+@media only screen and (max-width: 566px){
+    #section-main .container{
+        margin-top: -230px !important;
+    }
+}
+    
 @media only screen and (min-width: 766px) and (max-width: 990px){
 .portfolio{
     height: 2566px !important;
@@ -12849,6 +12854,16 @@ body.de_light::-webkit-scrollbar-thumb {
     header div#logo a {
         color: #fff;
         font-size: 28px;
+    }
+}
+@media only screen and (min-width: 521px) and  (max-width: 765px){
+    .portfolio{
+        height: 13000px !important
+    }
+}
+@media only screen and (min-width: 300px) and  (max-width: 345px){
+    .portfolio{
+        height: 7675px !important
     }
 }
 @media only screen and (min-width: 521px) and  (max-width: 765px){
