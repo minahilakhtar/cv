@@ -11812,6 +11812,10 @@ img {
     text-align: right
 }
 
+.portfolio {
+    height: 4066px !important;
+}
+
 @media only screen and (min-width:1280px) {
     .container {
         min-width: 1200px
@@ -12763,6 +12767,7 @@ img {
         background-size: auto 100%;
         background-attachment: scroll
     }
+    
 }
 
 @media only screen and (max-width:992px) {
@@ -12808,18 +12813,53 @@ body.de_light::-webkit-scrollbar-thumb {
   background-color: #dddddd;
 }
 @media only screen and (min-width: 1000px){
-    .typed-words{
+    /* .typed-words{
     color: #000 !important;
-    }
+    } */
 }
-@media only screen and (min-width: 766px)
+@media only screen and (min-width: 766px){
 .first-c {
     width: 328px;
     height: 257px;
 }
-@media only screen and (max-width: 345px)
+
+}
+@media only screen and (min-width: 766px) and (max-width: 990px){
+.portfolio{
+    height: 2566px !important;
+}
+}
+@media only screen and (min-width: 1006px) and (max-width: 1457px) {
+    .portfolio{
+        height: 3866px !important;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .portfolio{
+        height: 9367px !important
+    }
+    header div#logo a {
+        font-size: 28px;
+    }
+}
+@media only screen and (min-width: 401px) and  (max-width: 520px){
+    .portfolio{
+        height: 11900px !important;
+    }
+    header div#logo a {
+        color: #fff;
+        font-size: 28px;
+    }
+}
+@media only screen and (min-width: 521px) and  (max-width: 765px){
+    .portfolio{
+        height: 13000px !important
+    }
+}
+@media only screen and (max-width: 345px){
 header div#logo {
     line-height: 31px;
+}
 }
 
 
