@@ -12910,7 +12910,7 @@ body.de_light::-webkit-scrollbar-thumb {
 }
 @media only screen and (max-width: 566px){
     #section-main .container{
-        margin-top: -230px !important;
+        margin-top: -100px !important;
     }
 }
     
