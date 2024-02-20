@@ -11926,9 +11926,9 @@ width: 90vw;
     }
 
 @media only screen and (max-width: 1400px) {
-        .container{
+        /* .container{
             min-width:1320px;
-        }
+        } */
           
     }
 
