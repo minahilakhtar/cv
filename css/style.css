@@ -11845,6 +11845,9 @@ img {
         .container{
             min-width:1320px;
         }
+          .portfolio{
+        height: 3966px !important;
+    }
     }
 
 @media (min-width:768px) and (max-width:979px) {
@@ -12875,11 +12878,6 @@ body.de_light::-webkit-scrollbar-thumb {
 header div#logo {
     line-height: 31px;
 }
-}
-@media only screen and (min-width: 1405px){
-    .portfolio{
-        height: 3966px !important;
-    }
 }
 
 
