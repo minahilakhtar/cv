@@ -11812,10 +11812,12 @@ img {
     text-align: right
 }
 
-.portfolio {
+/* .portfolio {
     height: 4066px !important;
+} */
+.portfolio{
+    height: 4166px !important;
 }
-
 @media only screen and (min-width:1280px) {
     .container {
         min-width: 1200px
@@ -11841,13 +11843,11 @@ img {
     }
     }
 
-    @media only screen and (min-width: 1400px) {
+@media only screen and (max-width: 1400px) {
         .container{
             min-width:1320px;
         }
-          .portfolio{
-        height: 3966px !important;
-    }
+          
     }
 
 @media (min-width:768px) and (max-width:979px) {
@@ -12852,18 +12852,18 @@ body.de_light::-webkit-scrollbar-thumb {
 }
 @media only screen and (min-width: 401px) and  (max-width: 520px){
     .portfolio{
-        height: 11900px !important;
+        height: 100% !important;
     }
     header div#logo a {
         color: #fff;
         font-size: 28px;
     }
 }
-@media only screen and (min-width: 521px) and  (max-width: 765px){
+/* @media only screen and (min-width: 521px) and  (max-width: 765px){
     .portfolio{
-        height: 13000px !important
+        height: 100% !important
     }
-}
+} */
 @media only screen and (min-width: 300px) and  (max-width: 345px){
     .portfolio{
         height: 7675px !important
@@ -12871,7 +12871,7 @@ body.de_light::-webkit-scrollbar-thumb {
 }
 @media only screen and (min-width: 521px) and  (max-width: 765px){
     .portfolio{
-        height: 13000px !important
+        height: 100% !important
     }
 }
 @media only screen and (max-width: 345px){
