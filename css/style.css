@@ -12876,5 +12876,10 @@ header div#logo {
     line-height: 31px;
 }
 }
+@media only screen and (min-width: 1405px){
+    .portfolio{
+        height: 3966px !important;
+    }
+}
 
 
