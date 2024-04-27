@@ -45,6 +45,10 @@ body .owl-stage .owl-item {
     height: 100% !important;
 }
 
+#section-portfolio .gallery-item .picframe{
+        height: 160px !important;
+}
+
 #wrapper {
     overflow: hidden;
     position: relative
