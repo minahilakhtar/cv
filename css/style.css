@@ -39,6 +39,12 @@ body .owl-stage .owl-item {
     display: inline-block
 }
 
+/*portfolio height  */
+
+#section-portfolio{
+    height: 100% !important;
+}
+
 #wrapper {
     overflow: hidden;
     position: relative
