@@ -11940,8 +11940,14 @@ width: 90vw;
 
 @media only screen and (max-width:992px) {
     #section-main .wow p{
-        font-size: 20px !important;
+        font-size: 28px !important;
     }
+     #section-main .typed-words {
+    font-size: 30px;
+}
+    #section-main h1.big {
+    font-size: 84px;
+     }
     .col-right {
         position: absolute;
         top: -82px;
