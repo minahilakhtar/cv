@@ -272,6 +272,9 @@ header.smaller.scroll-light #mainmenu li li a:hover {
         background-blend-mode: multiply;
         background-color: #00000069 !important;
 }
+#section-main .wow p{
+    font-size: 20px;
+}
 
 .logo-smaller div#logo img {
     font-size: 30px
