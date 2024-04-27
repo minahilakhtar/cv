@@ -11948,6 +11948,9 @@ width: 90vw;
     #section-main h1.big {
     font-size: 84px;
      }
+    #section-main .container{
+            margin-top: -208px;
+    }
     .col-right {
         position: absolute;
         top: -82px;
