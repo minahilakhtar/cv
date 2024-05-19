@@ -41,9 +41,9 @@ body .owl-stage .owl-item {
 
 /*portfolio height  */
 
-#section-portfolio{
+/* #section-portfolio{
     height: 100% !important;
-}
+} */
 
 #section-portfolio .gallery-item .picframe{
         height: 160px !important;
