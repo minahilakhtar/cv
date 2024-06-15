@@ -11959,6 +11959,7 @@ width: 90vw;
     font-size: 30px;
 }
     #section-main h1.big {
+        display: none;
     font-size: 84px;
      }
     #section-main .container{
