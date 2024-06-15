@@ -1038,7 +1038,7 @@ header.s2 #mainmenu>li>a {
 }
 
 header.header-mobile {
-    padding-left: 30px;
+    padding-left: 0px;
     padding-right: 30px;
     position: absolute;
     background: #111;
