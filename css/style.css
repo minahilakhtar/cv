@@ -12939,6 +12939,9 @@ body.de_light::-webkit-scrollbar-thumb {
     #section-main .container{
         margin-top: -100px !important;
     }
+    #section-main {
+    background-color: #000000 !important;
+}
 }
     
 @media only screen and (min-width: 766px) and (max-width: 990px){
