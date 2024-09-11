@@ -11,6 +11,7 @@
 }
 
 html {
+    
     overflow-x: hidden;
     padding: 0;
     margin: 0;
@@ -11967,7 +11968,6 @@ width: 90vw;
     }
      #section-main .typed-words {
     font-size: 30px;
-    margin-top: -161px;
 }
     #section-main h1.big {
         display: none;
@@ -12955,6 +12955,11 @@ body.de_light::-webkit-scrollbar-thumb {
     #home-mob-img{
     display:block;
 }
+    #home-mob-img{
+        background: linear-gradient(white, white) padding-box, linear-gradient(to right, #00769f, darkorchid) border-box;
+    border-radius: 50em;
+    border: 11px solid transparent;
+    }
 }
     
 @media only screen and (min-width: 766px) and (max-width: 990px){
