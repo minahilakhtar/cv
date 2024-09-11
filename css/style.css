@@ -285,6 +285,9 @@ header.smaller.scroll-light #mainmenu li li a:hover {
 #section-main .wow p{
     font-size: 20px;
 }
+#home-mob-img{
+    display:none;
+}
 
 .logo-smaller div#logo img {
     font-size: 30px
@@ -12948,6 +12951,9 @@ body.de_light::-webkit-scrollbar-thumb {
     }
     #section-main {
     background-color: #000000 !important;
+}
+    #home-mob-img{
+    display:block;
 }
 }
     
