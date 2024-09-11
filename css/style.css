@@ -3025,7 +3025,13 @@ h3.s_border {
     font-weight: 600;
     font-size: 22px
 }
-
+.typed{
+background-size: cover;
+    background-image: linear-gradient(to right, #faff97, #a9ff00);
+    font-weight: 800;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 h4 {
     font-size: 19px;
     margin-top: 0;
