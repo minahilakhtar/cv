@@ -3024,6 +3024,7 @@ h3.s_border {
     font-family: var(--font-general);;
     font-weight: 600;
     font-size: 22px
+  color: white;
 }
 .typed{
 background-size: cover;
