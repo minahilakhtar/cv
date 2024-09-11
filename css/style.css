@@ -3027,8 +3027,7 @@ h3.s_border {
 .typed-words {
     font-family: var(--font-general);;
     font-weight: 600;
-    font-size: 22px
-  color: white;
+    font-size: 22px;
 }
 .typed{
 background-size: cover;
