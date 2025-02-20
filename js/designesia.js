@@ -86,7 +86,7 @@
             image: {
                 verticalFit: true,
                 titleSrc: function(item) {
-                    return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">View Details</a>';
+                    return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">Vist Website</a>';
                 }
             },
             gallery: {
@@ -1385,6 +1385,51 @@
             var h = jQuery(this).css('height');
             jQuery(this).attr('data-height',h);
          });
+         
+
+        //  
+        // jQuery("#filters a").on("click", function (event) {
+        //     event.preventDefault();
+        
+        //     var filterValue = jQuery(this).attr("data-filter");
+        //     var $gallery = jQuery("#gallery");
+        
+        //     // Apply filter using Isotope or manually
+        //     $gallery.isotope({ filter: filterValue });
+        
+        //     // Ensure the height is updated properly
+        //     setTimeout(function () {
+        //         var galleryHeight = $gallery.outerHeight();
+        //         var minHeight = window.innerHeight - jQuery("#section-portfolio").offset().top; // Minimum height calculation
+        
+        //         // Set the height dynamically but ensure it's not too small
+        //         jQuery("#section-portfolio").css("height", Math.max(galleryHeight, minHeight) + "px");
+        //     }, 300);
+        // });
+        jQuery("#filters a").on("click", function (event) {
+            event.preventDefault();
+        
+            var filterValue = jQuery(this).attr("data-filter");
+            var $gallery = jQuery("#gallery");
+            var $sectionPortfolio = jQuery("#section-portfolio");
+        
+            // Apply Isotope filter
+            $gallery.isotope({ filter: filterValue });
+        
+            // Ensure the height is updated properly after Isotope has rearranged items
+            setTimeout(function () {
+                var galleryHeight = $gallery.outerHeight();
+                var minHeight = window.innerHeight - $sectionPortfolio.offset().top; // Minimum height calculation
+        
+                // Add 200px extra height
+                var newHeight = Math.max(galleryHeight, minHeight) + 380;
+        
+                // Set the updated height
+                $sectionPortfolio.css("height", newHeight + "px");
+            }, 300);
+        });
+        
+
 
           var v_delay;
           function doTimer(n){
@@ -1458,7 +1503,7 @@
              jQuery('section').each(function() {
                 var h = jQuery(this).css('height');
                 jQuery(this).attr('data-height',h);
-             });
+             });    
          });
          /* --------------------------------------------------
           * window | on scroll
