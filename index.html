@@ -6,9 +6,10 @@
     <meta content='width=device-width, initial-scale=1.0' name="viewport" />
     <meta content='Minahil Akhtar' name="description" />
     <meta property='og:title' content="Minahil Akhtar" />
-    <meta property='og:description' content=" It is my pleasure to introduce myself to you as Minahil Akhtar a MERN stack (MongoDB, Express.js, React.js, Node.js) and WordPress developer. As a passionate programmer, I have immersed myself in the world of web development and discovered the power of the MERN stack."/>
+    <meta property='og:description'
+        content=" It is my pleasure to introduce myself to you as Minahil Akhtar a MERN stack (MongoDB, Express.js, React.js, Node.js) and WordPress developer. As a passionate programmer, I have immersed myself in the world of web development and discovered the power of the MERN stack." />
     <meta property='og:type' content="website" />
-    <meta property='og:url' content="https://minahilakhtar.github.io/cv"/>
+    <meta property='og:url' content="https://minahilakhtar.github.io/cv" />
     <meta property="og:image" content="images/my-passport-photo (1).jpg" />
     <meta name="twitter:card" content="summary_large_image">
     <title>Minahil Akhtar</title>
@@ -18,6 +19,8 @@
     <!-- CSS Files
     ================================================== -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script> <!-- Include GSAP -->
+
     <link href="css/jpreloader.css" rel="stylesheet" type="text/css">
     <link href="css/animate.css" rel="stylesheet" type="text/css" />
     <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
@@ -29,6 +32,7 @@
     <!-- color scheme -->
     <link id="colors" href="css/colors/scheme-02.css" rel="stylesheet" type="text/css" />
     <link href="css/coloring.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
@@ -48,7 +52,7 @@
                                 <!-- logo begin -->
                                 <div id="logo">
                                     <a href="https://minahilakhtar.github.io/cv/">
-                                        Minahil Akhtar
+                                        <img style="width: 240px;" src="./images/background/Minahil Logo-01.png" alt="">
                                     </a>
                                 </div>
                                 <!-- logo close -->
@@ -58,12 +62,14 @@
                                 <ul id="mainmenu" class="scrollnav">
                                     <li><a href="#section-about">About Me</a></li>
                                     <li></li>
+                                    <li><a href="#section-services">Services</a></li>
+                                    <li></li>
                                     <li><a href="#section-portfolio">Portfolio</a></li>
                                     <li></li>
                                     <li><a href="#section-skills">Testimonials</a></li>
                                     <li></li>
-                                    <li><a href="#section-certificates">Certificates</a></li>
-                                    <li></li>
+                                    <!-- <li><a href="#section-certificates">Certificates</a></li> -->
+                                    <!-- <li></li> -->
                                     <li><a href="#section-contact">Contact</a></li>
                                     <li></li>
                                 </ul>
@@ -71,21 +77,12 @@
                             </div>
                             <div class="align-self-center ml-auto header-col-right">
 
-                                <div class="align-self-center ml-auto" style="background-size: cover;">
-                                    <div class="social-icons s-border sm-hide mysocial">
-                                        <a href="https://www.facebook.com/minahilakhtar2235/"><i
-                                                class="fa fa-facebook fa-lg"></i></a>
-                                        <a href="https://www.linkedin.com/in/minahil-akhtar/"><i
-                                                class="fa fa-linkedin fa-lg"></i></a>
-                                        <a href="https://www.instagram.com/minahilakhtar2235/"><i
-                                                class="fa fa-instagram fa-lg"></i></a>
-                                        <a href="https://twitter.com/MinahilAkhtar9"><i
-                                                class="fa fa-twitter fa-lg"></i></a>
-                                        <a href="https://github.com/minahilakhtar"><i
-                                                class="fa fa-github fa-lg"></i></a>
+                                <div class="align-self-center ml-auto home-menu-btn" style="background-size: cover;">
+                                    <div class="social-icons-contact sm-hide mysocial">
+                                        <a href="mailto:minahilakhter@gmail.com"> Work With Me</i></a>
                                     </div>
-                                    <span id="menu-btn"></span>
                                 </div>
+                                <span id="menu-btn"></span>
                             </div>
                             <div class="clearfix"></div>
                         </div>
@@ -99,116 +96,345 @@
         <div class="no-bottom no-top dark">
             <div id="top"></div>
             <!-- section begin -->
-            <section id="section-main" style="background-blend-mode: multiply; background-position-y:-32px;" class="vertical-center" data-bgimage="url(images/background/mini.jpeg) right top"
-                data-stellar-background-ratio=".5">
+            <section id="section-main"
+                style="background-blend-mode: multiply; background-position-y:-32px; background-color: black;"
+                class="vertical-center" data-stellar-background-ratio=".5">
                 <div id="particles-js"></div>
                 <div id="v-wrap">
                     <!-- <div class="vw-inner">
                         <div class="vw-col"><i class="fa fa-mobile id-color"></i> +1 1224 6779</div>
                     </div> -->
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay=".25s">
-                            <h1 class="big text-light">Minahil Akhtar</h1>
+                <div class="container pt-5">
+                    <div class="d-flex align-items-center main-inner">
+                        <div class="col-lg-6 wow fadeIn px-0" data-wow-delay=".25s">
+                            <p class="sub-text text-light pt-4">Accelerate your online presence with my</p>
                             <div class="spacer-half"></div>
-                            <div style="margin-bottom: 2rem;" class="typed-words"">
-                                I Am
-                                <div class="typed-strings">
+                            <div style="margin-bottom: 2rem;" class="typed-words big">
+                                Cutting-Edge Expertise as a
+                                <div class=" typed-strings">
                                     <p>MERN Stack Developer</p>
                                     <p>Wordpress Developer</p>
                                     <p>React.JS Developer</p>
                                 </div>
-                                <div class="typed" style=""></div>
+                                <div class="typed grad-head"></div>
                             </div>
-                            <p style="color: white;">I'm a full-stack developer who loves crafting digital solutions. My
-                                strong foundation in front-end and back-end technologies allows me to solve problems
-                                creatively and with a user-centric approach.</p>
-                            <a href="images/Minahil Akhtar Resume.pdf" class="btn-custom sm-hide"
-                                target="blank">Download CV</a>
+                            <div class="verified-main-icon mb-4">
+                                <a href="https://www.facebook.com/minahilakhtar2235/"><i class="fa fa-trophy pr-4"
+                                        style="font-size: 25px; color: #52C7DE;;"><span class="pl-2"
+                                            style="color: white;   font-size: 19px;">Verified by
+                                            <b>Facebook<b></span></i></a>
+                                <a href="https://www.linkedin.com/in/minahil-akhtar/"> <i class="fa fa-shield"
+                                        style="font-size: 25px; color: #52C7DE;;"><span class="pl-2"
+                                            style="color: white;   font-size: 19px;">Verified
+                                            by<b>linkedin<b></span></i></a>
+                            </div>
+                            <div class="social-main">
+                                <a href="https://www.linkedin.com/in/minahil-akhtar/"><i class="fa fa-linkedin "
+                                        style="font-size: 23px; color: rgb(255, 255, 255);"></i></a>
+                                <a href="https://www.facebook.com/minahilakhtar2235/"><i class="fa fa-facebook "
+                                        style="font-size: 23px; color: rgb(255, 255, 255);"></i></a>
+                                <a href="https://github.com/minahilakhtar"><i class="fa fa-github "
+                                        style="font-size: 23px; color: rgb(255, 255, 255);"></i></a>
+                                <a href="mailto:minahilakhter@gmail.com"></a> <i class="fa fa-envelope "
+                                    style="font-size: 23px; color: rgb(255, 255, 255);"></i>
+                                <a href="https://folll.io/minahilakhtar"> <i class="fa fa-globe"
+                                        style="font-size: 23px; color: rgb(255, 255, 255);"></i></a>
+                                <a href="https://twitter.com/MinahilAkhtar9"><i class="fa fa-twitter"
+                                        style="font-size: 23px; color: rgb(255, 255, 255);"></i></a>
+                            </div>
+                            <div class="row pt-3 count-home-cover">
+
+                                <div class="col-lg-4 col-md-6 mb30 p-2">
+                                    <div class="">
+                                        <div class="count-home pb-1 text-center">
+                                            <h4 style="    font-size: 70px;">1000+</h4>
+                                            <p>Satisfied Clients</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb30 p-2 text-center">
+                                    <div class="">
+                                        <div class="count-home pb-3">
+                                            <h4 style="    font-size: 70px;">255+</h4>
+                                            <p>Projects Delivered</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb30 p-2 text-center third-count-home">
+                                    <div class="">
+                                        <div class="count-home pb-3">
+                                            <h4 style="    font-size: 70px;">10+</h4>
+                                            <p>Awards</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="main-right-img text-center">
+                            <img src="./images/background/contact-2.png" alt="">
                         </div>
                     </div>
-                     <div class="d-hover-zoom wow fadeInRight" id="home-mob-img">
-                                    <a class="image-popup" href="images/misc/Minahil.jpg">
-                                        <img class="img-fluid" src="images/misc/Minahil.jpg" alt="" />
-                                    </a>
+                    <div class="d-hover-zoom wow fadeInRight" id="home-mob-img">
+                        <a class="image-popup" href="images/misc/Minahil.jpg">
+                            <img class="img-fluid" src="images/misc/Minahil.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+            <!-- section close -->
+
+            <!-- section begin -->
+            <section id="section-skills" style="display: block !important" class="dark justify-content-center">
+                <div class="container" id="my-cont ">
+                    <div class="row container bg-box">
+                        <div class="col-lg-12 wow fadeInRight">
+                            <h4 class="title">Reviews</h4>
+                            <h2 class="title">Testimonials</h2>
+                            <!-- <div class="title-underline"></div> -->
+                        </div>
+                    </div>
+
+
+                    <div class="video-container">
+                        <div class="thumbnail video-grad"
+                            onclick="openModal('https://www.youtube.com/embed/eVHYiFdWi6o')">
+
+                            <img src="images/portfolio/ali.jpg" alt="Video 1 Thumbnail">
+
+                        </div>
+
+                        <div class="thumbnail video-grad"
+                            onclick="openModal('https://www.youtube.com/embed/8JaUCPUpdUc')">
+                            <img src="images/portfolio/qasim.jpg" alt="Video 2 Thumbnail">
+                        </div>
+                        <div class="thumbnail video-grad"
+                            onclick="openModal('https://www.youtube.com/embed/5YSaaQYOxCI')">
+                            <img src="images/portfolio/iqra.jpg" alt="Video 3 Thumbnail">
+                        </div>
+                    </div>
+                    <div class="video-container">
+                        <div class="thumbnail video-grad"
+                            onclick="openModal('https://www.youtube.com/embed/lGi6TiNpYHE')">
+                            <img src="images/portfolio/sabahat.jpg " alt="Video 1 Thumbnail">
+                        </div>
+                        <div class="thumbnail video-grad"
+                            onclick="openModal('https://www.youtube.com/embed/52EGqA8mlv4')">
+                            <img src="images/portfolio/sana.jpg" alt="Video 2 Thumbnail">
+                        </div>
+                        <div class="thumbnail video-grad"
+                            onclick="openModal('https://www.youtube.com/embed/kDAG6ag4XRU')">
+                            <img src="images/portfolio/dr affan.jpg" alt="Video 1 Thumbnail">
+                        </div>
+                    </div>
+                    <div class="video-container">
+                        <div class="thumbnail video-grad"
+                            onclick="openModal('https://www.youtube.com/embed/RPhEOeOS7Wg')">
+
+                            <img src="images/portfolio/amara.jpg" alt="Video 1 Thumbnail">
+
+                        </div>
+                        <div class="thumbnail video-grad"
+                            onclick="openModal('https://www.youtube.com/embed/brfax5vZAhI')">
+                            <img src="images/portfolio/parinda.jpg" alt="Video 1 Thumbnail">
+
+                        </div>
+                        <div class="thumbnail video-grad"
+                            onclick="openModal('https://www.youtube.com/embed/CFFhhsbsLOQ')">
+                            <img src="images/portfolio/anne.jpg" alt="Video 1 Thumbnail">
+
+                        </div>
+                    </div>
+                    <div class="row pt-5 container image-sec-cover">
+                        <div class="col-lg-6 mb-sm-30 text-center pt-5">
+                            <div class="image-container d-flex">
+
+                                <div class="image-slider img-slider-fst">
+                                    <!-- Original Images -->
+                                    <img src="./images/people/david.PNG" alt="Image 1">
+                                    <img src="./images/people/mike.PNG" alt="Image 2">
+                                    <img src="./images/people/parinda.PNG" alt="Image 3">
+                                    <!-- Duplicate Images for seamless scroll -->
+                                    <img src="./images/people/david.PNG" alt="Image 1">
+                                    <img src="./images/people/mike.PNG" alt="Image 2">
+                                    <img src="./images/people/parinda.PNG" alt="Image 3">
                                 </div>
-                </div>
-                
+                                <div class="image-slider img-slider-sec ">
+                                    <!-- Original Images -->
+                                    <img src="./images/people/john.PNG" alt="Image 1">
+                                    <img src="./images/people/qasim.PNG" alt="Image 2">
+                                    <img src="./images/people/vitalie.PNG" alt="Image 3">
+                                    <!-- Duplicate Images for seamless scroll -->
+                                    <img src="./images/people/john.PNG" alt="Image 1">
+                                    <img src="./images/people/qasim.PNG" alt="Image 2">
+                                    <img src="./images/people/vitalie.PNG" alt="Image 3">
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-5 about-main wow fadeInRight pt-5 feedback-sec" data-wow-delay=".5s">
+                            <h2>Feedback Reflects My <span class=" grad-head">Expertise</span></h2>
+                            <p>
+                                I'm deeply passionate about merging technical innovation with creative problem-solving
+                                to
+                                help businesses scale new heights. If you're looking for advice on your website or
+                                curious
+                                about what's possible in the digital realm, don't hesitate to reach out. Let's team up
+                                and
+                                turn those incredible ideas into reality.
+                                <br><br><i class="fa fa-check-circle"
+                                    style="font-size: 25px; color: #6EC8C9; padding-right: 5px;" aria-hidden="true"></i>
+                                <strong>Proven Results:</strong> Clients share
+                                how my web solutions have helped them achieve business growth and success.
+                                <br><br><i class="fa fa-check-circle"
+                                    style="font-size: 25px; color: #6EC8C9; padding-right: 5px;" aria-hidden="true"></i>
+                                <strong>Effective
+                                    Communication</strong> Feedback highlights my clear, consistent communication
+                                throughout
+                                the project lifecycle.
+                                <br><br><i class="fa fa-check-circle"
+                                    style="font-size: 25px; color: #6EC8C9; padding-right: 5px;" aria-hidden="true"></i>
+                                <strong>Client
+                                    Satisfaction:</strong> My Work reflect my dedication to exceeding client
+                                expectations
+                                through exceptional service.
+                                <br><br><i class="fa fa-check-circle"
+                                    style="font-size: 25px; color: #6EC8C9; padding-right: 5px;" aria-hidden="true"></i>
+                                <strong>Timely
+                                    Completion:</strong> Clients appreciate my ability to meet deadlines while
+                                delivering
+                                high-quality work.
+                            </p>
+
+                            <!-- <ul class="info-list text-white">
+                                <li><span class="d_title">Full Name: </span><span class="d_value">Minahil Akhtar.</span>
+                                </li>
+                                <li><span class="d_title">Language: </span><span class="d_value">English, Urdu,
+                                        Punjabi.</span></li>
+                                <li><span class="d_title">Phone</span><span class="d_value">‪(815) 513-2697‬</span></li>
+                                <li><span class="d_title">Email: </span><span
+                                        class="d_value">minahilakhter@gmail.com</span></li>
+                            </ul> -->
+
+                        </div>
+                    </div>
+                    <div class="spacer-80"></div>
+                    <div class="review-images text-center">
+                        <h2>What Clients say <span class="grad-head">About Me</span></h2>
+
+                        <div class="review-container">
+                            <!-- Initially Visible Images -->
+                            <div class="review-boxes-upper">
+
+                                <div class="review-boxes d-flex justify-content-center py-4">
+                                    <div class="review-box video-grad">
+                                        <img style=" width: 585px;" src="./images/people/written1.jpg" alt="">
+                                    </div>
+                                    <div class="review-box video-grad">
+                                        <img style="width: 585px;" src="./images/people/written2.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-boxes-upper">
+                                <div class="review-boxes d-flex justify-content-center py-4">
+                                    <div class="review-box video-grad">
+                                        <img style="width: 585px;" src="./images/people/written3.jpg" alt="">
+                                    </div>
+                                    <div class="review-box video-grad">
+                                        <img style="width: 585px;" src="./images/people/written4.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-boxes-upper">
+                                <div class="review-boxes d-flex justify-content-center py-4">
+                                    <div class="review-box video-grad">
+                                        <img style="width: 585px;" src="./images/people/written5.jpg" alt="">
+                                    </div>
+                                    <div class="review-box video-grad">
+                                        <img style="width: 585px;" src="./images/people/written6.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-boxes-upper">
+                                <div class="review-boxes d-flex justify-content-center py-4">
+                                    <div class="review-box video-grad">
+                                        <img style="width: 585px;" src="./images/people/written7.jpg" alt="">
+                                    </div>
+                                    <div class="review-box video-grad">
+                                        <img style="width: 585px;" src="./images/people/written8.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Load More Button -->
+                            <!-- <div class="button-wrap">
+                                <button id="load-more">Load More</button>
+                            </div> -->
+                            <div class="align-self-center ml-auto  py-4">
+
+                                <div class="align-self-center ml-auto home-menu-btn" style="background-size: cover;">
+                                    <div class="social-icons-contact mysocial" style="cursor: pointer;">
+                                        <a id="load-more"> Load More</i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div id="myModal" class="modal" onclick="closeModal()">
+                            <div class="modal-content">
+                                <span class="close-btn" onclick="closeModal()">&#10006;</span>
+                                <iframe id="videoIframe" width="100%" height="100%" frameborder="0"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <ul class="circles">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
             </section>
+
+
             <!-- section close -->
 
             <!-- section begin -->
-            <section id="section-skills" style="display: block !important" class="dark" data-bgimage="url(images/background/4-blur.jpg) top fixed">
-                <div class="" id="my-cont">
-                    
-                        <h4 class="title">Videos</h4>
-                        <h2 class="title">Testimonials</h2>
-                        <div class="title-underline"></div>
-                  
-                <div class="video-container">
-                    <div class="thumbnail" onclick="openModal('https://www.youtube.com/embed/brfax5vZAhI')">
-                        <img src="images/portfolio/parinda.jpg" alt="Video 1 Thumbnail">
-                    </div>
-                    <div class="thumbnail" onclick="openModal('https://www.youtube.com/embed/8JaUCPUpdUc')">
-                        <img src="images/portfolio/Qasim.jpg" alt="Video 2 Thumbnail">
-                    </div>
-                    <div class="thumbnail" onclick="openModal('https://www.youtube.com/embed/5YSaaQYOxCI')">
-                        <img src="images/portfolio/iqra.webp" alt="Video 3 Thumbnail">
-                    </div>
-                </div>
-                <div class="video-container">
-                    <div class="thumbnail" onclick="openModal('https://www.youtube.com/embed/lGi6TiNpYHE')">
-                        <img src="images/portfolio/sabahat.jpg  " alt="Video 1 Thumbnail">
-                    </div>
-                    <div class="thumbnail" onclick="openModal('https://www.youtube.com/embed/52EGqA8mlv4')">
-                        <img src="images/portfolio/sana.jpg" alt="Video 2 Thumbnail">
-                    </div>
-                    <div class="thumbnail" onclick="openModal('https://www.youtube.com/embed/kDAG6ag4XRU')">
-                        <img src="images/portfolio/draffan.jpg" alt="Video 1 Thumbnail">
-                    </div>
-                </div>
-
-                <div id="myModal" class="modal" onclick="closeModal()">
-                    <div class="modal-content">
-                        <span class="close-btn" onclick="closeModal()">&#10006;</span>
-                        <iframe id="videoIframe" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-                </div>
-            </section>
-
-
-            <!-- section close -->
-
-            <!-- section begin -->
-            <section id="section-about" class="dark" data-bgimage="url(images/background/4-blur.jpg) top fixed">
-                <div class="container">
-                    <div class="row">
+            <section id="section-about" class="dark">
+                <div class="about-sec-main">
+                    <div class="row container bg-box">
                         <div class="col-lg-12 wow fadeInRight">
                             <h4 class="title">Who I Am</h4>
                             <h2 class="title">About Me</h2>
-                            <div class="title-underline"></div>
+                            <!-- <div class="title-underline"></div> -->
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-6 mb-sm-30 text-center">
-                            <div class="de-images">
-                                <div class="d-hover-zoom wow fadeInRight">
-                                    <a class="image-popup" href="images/misc/Minahil.jpg">
-                                        <img class="img-fluid" src="images/misc/Minahil.jpg" alt="" />
-                                    </a>
-                                </div>
-                                <div class="d-hover-zoom di-small-2 wow fadeInLeft">
+                    <div class="row container">
+                        <div class="col-lg-6 mb-sm-30 text-center about-main-img">
+                            <img class="" src="images/misc/mini.png" alt="" />
+
+                            <!-- <div class="d-hover-zoom di-small-2 wow fadeInLeft">
                                     <a class="image-popup" href="images/misc/minahil2.jpg">
                                         <img src="images/misc/minahil2.jpg" alt="" />
                                     </a>
-                                </div>
-                            </div>
+                                </div> -->
                         </div>
-                        <div class="col-lg-5 offset-md-1 wow fadeInRight" data-wow-delay=".5s">
-                            <h2>Hello, I'm <span class="id-color">Minahil Akhtar</span></h2>
-                            <p>
+                        <div class="col-lg-5 about-main wow fadeInRight" data-wow-delay=".5s">
+                            <h2>Hello, I'm <span class=" grad-head">Minahil Akhtar</span></h2>
+                            <p class="mb-0">
                                 I'm Minahil Akhtar, a Full-stack developer who loves crafting digital solutions. My
                                 strong foundation in front-end and back-end technologies allows me to solve problems
                                 creatively and with a user-centric approach.<br><br>
@@ -221,12 +447,18 @@
                                 commitment to applying the most effective technology stack to address complex business
                                 challenges.<br><br>
 
-                                I can design, develop, and test responsive websites that are optimized for all devices
-                                and browsers. I am also experienced in SEO optimization, website security, and
-                                performance optimization.<br>
 
                             </p>
-                            <ul class="info-list text-white">
+
+                            <div class="animated-button-cover">
+                                <div class="button-wrapper">
+                                    <button class="animated-button" type="button"><a href="#section-contact"
+                                            target="_blank">Work With me</a></button>
+
+                                    <div class="button-bg"></div>
+                                </div>
+                            </div>
+                            <!-- <ul class="info-list text-white">
                                 <li><span class="d_title">Full Name: </span><span class="d_value">Minahil Akhtar.</span>
                                 </li>
                                 <li><span class="d_title">Language: </span><span class="d_value">English, Urdu,
@@ -234,30 +466,571 @@
                                 <li><span class="d_title">Phone</span><span class="d_value">‪(815) 513-2697‬</span></li>
                                 <li><span class="d_title">Email: </span><span
                                         class="d_value">minahilakhter@gmail.com</span></li>
-                            </ul>
+                            </ul> -->
 
                         </div>
                     </div>
                     <div class="spacer-80"></div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3 class="s_border">My Services</h3>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mb30">
+                    <div class="row about-sec container" data-bgimage="url(images/misc/star.png)">
+
+                        <div class="col-lg-3 col-md-6 mb30 p-2">
                             <div class="f-box f-icon-left f-icon-box">
-                                <i class="fa fa-laptop id-color"></i>
-                                <div class="fb-text">
-                                    <h4>WordPress Development</h4>
-                                    <p>I have great experience in WordPress development. I create custom WordPress
-                                        websites for all niches. I provide the best customer support and unlimited
-                                        revisions till the buyer is 100% satisfied with the end Product.</p>
+                                <div class="fb-text about-process">
+                                    <h3 class="process-title">01</h3>
+                                    <h4>Versatile Expertise</h4>
+                                    <p>I have extensive experience in both front-end and back-end development, allowing
+                                        me
+                                        to create seamless, integrated solutions. Whether you need responsive user
+                                        interfaces, robust server-side logic, or database management.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 mb30 wow fadeInRight" data-wow-delay=".25s">
+                        <div class="col-lg-3 col-md-6 mb30 p-2">
                             <div class="f-box f-icon-left f-icon-box">
-                                <i class="fa fa-paper-plane-o id-color"></i>
-                                <div class="fb-text">
+                                <div class="fb-text about-process">
+                                    <h3 class="process-title">02</h3>
+                                    <h4>Ongoing Support</h4>
+                                    <p>My services don’t end with deployment. I offer ongoing maintenance & support to
+                                        ensure your applications remain up-to-date, & functioning optimally. This
+                                        approach helps mitigate potential issues before they affect users.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb30 p-2">
+                            <div class="f-box f-icon-left f-icon-box">
+                                <div class="fb-text about-process">
+                                    <h3 class="process-title">03</h3>
+                                    <h4>Strong Collaboration</h4>
+                                    <p>I value building long-term relationships with my clients through collaboration &
+                                        transparency. I work closely with you throughout the development process,
+                                        ensuring
+                                        your vision is realized while providing expert guidance.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb30 p-2">
+                            <div class="f-box f-icon-left f-icon-box">
+                                <div class="fb-text about-process">
+                                    <h3 class="process-title">04</h3>
+                                    <h4>Quality and Performance</h4>
+                                    <p>I prioritize writing clean, maintainable code and implementing best practices to
+                                        optimize performance. My commitment to quality ensures that your applications
+                                        are
+                                        reliable & scalable as your business evolves.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="row pt-5 container">
+                        <div class="col-lg-6 mb-sm-30 text-center pt-5">
+                            <div class="image-container d-flex">
+
+                                <div class="image-slider img-slider-fst">
+                                    <!-- Original Images -->
+                                    <img src="./images/people/david.PNG" alt="Image 1">
+                                    <img src="./images/people/mike.PNG" alt="Image 2">
+                                    <img src="./images/people/parinda.PNG" alt="Image 3">
+                                    <!-- Duplicate Images for seamless scroll -->
+                                    <img src="./images/people/david.PNG" alt="Image 1">
+                                    <img src="./images/people/mike.PNG" alt="Image 2">
+                                    <img src="./images/people/parinda.PNG" alt="Image 3">
+                                </div>
+                                <div class="image-slider img-slider-sec ">
+                                    <!-- Original Images -->
+                                    <img src="./images/people/john.PNG" alt="Image 1">
+                                    <img src="./images/people/qasim.PNG" alt="Image 2">
+                                    <img src="./images/people/vitalie.PNG" alt="Image 3">
+                                    <!-- Duplicate Images for seamless scroll -->
+                                    <img src="./images/people/john.PNG" alt="Image 1">
+                                    <img src="./images/people/qasim.PNG" alt="Image 2">
+                                    <img src="./images/people/vitalie.PNG" alt="Image 3">
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-5 about-main wow fadeInRight pt-5 feedback-sec" data-wow-delay=".5s">
+                            <h2>Feedback Reflects My <span class=" grad-head">Expertise</span></h2>
+                            <p>
+                                I'm deeply passionate about merging technical innovation with creative problem-solving
+                                to
+                                help businesses scale new heights. If you're looking for advice on your website or
+                                curious
+                                about what's possible in the digital realm, don't hesitate to reach out. Let's team up
+                                and
+                                turn those incredible ideas into reality.
+                                <br><br><i class="fa fa-check-circle"
+                                    style="font-size: 25px; color: #6EC8C9; padding-right: 5px;" aria-hidden="true"></i>
+                                <strong>Proven Results:</strong> Clients share
+                                how my web solutions have helped them achieve business growth and success.
+                                <br><br><i class="fa fa-check-circle"
+                                    style="font-size: 25px; color: #6EC8C9; padding-right: 5px;" aria-hidden="true"></i>
+                                <strong>Effective
+                                    Communication</strong> Feedback highlights my clear, consistent communication
+                                throughout
+                                the project lifecycle.
+                                <br><br><i class="fa fa-check-circle"
+                                    style="font-size: 25px; color: #6EC8C9; padding-right: 5px;" aria-hidden="true"></i>
+                                <strong>Client
+                                    Satisfaction:</strong> My Work reflect my dedication to exceeding client
+                                expectations
+                                through exceptional service.
+                                <br><br><i class="fa fa-check-circle"
+                                    style="font-size: 25px; color: #6EC8C9; padding-right: 5px;" aria-hidden="true"></i>
+                                <strong>Timely
+                                    Completion:</strong> Clients appreciate my ability to meet deadlines while
+                                delivering
+                                high-quality work.
+                            </p>
+
+                            <!-- <ul class="info-list text-white">
+                                <li><span class="d_title">Full Name: </span><span class="d_value">Minahil Akhtar.</span>
+                                </li>
+                                <li><span class="d_title">Language: </span><span class="d_value">English, Urdu,
+                                        Punjabi.</span></li>
+                                <li><span class="d_title">Phone</span><span class="d_value">‪(815) 513-2697‬</span></li>
+                                <li><span class="d_title">Email: </span><span
+                                        class="d_value">minahilakhter@gmail.com</span></li>
+                            </ul> -->
+
+                        </div>
+                    </div>
+                    <div class="spacer-80"></div>
+                    <div class="skills-section">
+                        <div class="skills-text">
+                            <p class="mb-0">My Skills</p>
+                            <h1><span>Let's Explore Popular </span><span class=" grad-head">Skills & Experience</span>
+                            </h1>
+                            <p>
+                                I specialize in MERN Stack development, delivering high-performance, scalable, and innovative web applications. With a strong focus on efficiency and user experience, I leverage modern technologies to create seamless and impactful digital solutions.
+                            </p>
+                            <p>
+                                Let’s collaborate to turn your ideas into powerful, user-friendly web applications that drive results!
+                            </p>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-card skill-php">
+                                <div class="skill-icon"></div>
+                                <p class="skill-title">PHP</p>
+                            </div>
+                            <div class="skill-card skill-react">
+                                <div class="skill-icon"></div>
+                                <p class="skill-title">React Js</p>
+                            </div>
+                            <div class="skill-card skill-node">
+                                <div class="skill-icon"></div>
+                                <p class="skill-title">Node Js</p>
+                            </div>
+                            <div class="skill-card skill-shopify">
+                                <div class="skill-icon"></div>
+                                <p class="skill-title">Shopify</p>
+                            </div>
+                            <div class="skill-card skill-wordpress">
+                                <div class="skill-icon"></div>
+                                <p class="skill-title">WordPress</p>
+                            </div>
+                            <div class="skill-card skill-elementor">
+                                <div class="skill-icon"></div>
+                                <p class="skill-title">Elementor</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" row container">
+                       
+                        <div class="row">
+                           
+                        </div>
+                        
+                    </div>
+                    <div class="spacer-50"></div>
+                    <div class=" count-sec" data-bgimage="url(images/background/bg.webp)">
+                        <h1 class="text-center "><span>My </span><span class=" grad-head">Skills & Experience</span>
+                        </h1>
+                        <div class="title-underline "></div>
+                        <div class="row count-sec-inner">
+
+                            <div class="col-lg-3 col-md-6 mb30 p-2 count-numbers-upper">
+                                <div class="f-box f-icon-left f-icon-box">
+                                    <div class="fb-text count-numbers pb-3" style="width: 75%;">
+                                        <h4 style="font-size: 45px;">1000+</h4>
+                                        <p>Satisfied Clients</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb30 p-2 count-numbers-upper">
+                                <div class="f-box f-icon-left f-icon-box">
+                                    <div class="fb-text count-numbers pb-3" style="width: 75%;">
+                                        <h4 style="font-size: 45px;">250+</h4>
+                                        <p>Projects Delivered
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb30 p-2 count-numbers-upper">
+                                <div class="f-box f-icon-left f-icon-box">
+                                    <div class="fb-text count-numbers pb-3" style="width: 75%;">
+                                        <h4 style="font-size: 45px;">10+</h4>
+                                        <p>Awards</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb30 p-2 count-numbers-upper">
+                                <div class="f-box f-icon-left f-icon-box">
+                                    <div class="fb-text count-numbers pb-3" style="width: 75%;">
+                                        <h4 style="font-size: 45px;">5+</h4>
+                                        <p>Team</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- <div class="spacer-50"></div> -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- <h3 class="s_border">Testimonials</h3> -->
+                        </div>
+                        <div class="col-md-12">
+                            <div id="testimonial-carousel" class="owl-carousel owl-theme wow fadeInUp">
+                                <!-- <blockquote class="testimonial-big text-light">
+                                I'm very happy with the job done by Minahil. She was very patient and very quick
+                                definitely knew his stuff well and what she was doing. I definitely recommend her
+                                for any job and hire her again for my future projects.
+                                <img src="images/people/hifza.jpg" alt="" />
+                                <span class="name">DR.Hifza Khan</span>
+                            </blockquote>
+                            <blockquote class="testimonial-big text-light">
+                                She Understood my needs and delivered exactly what I was looking for quickly and
+                                with no hassles. I would recommend her to anyone and will definitely work with her
+                                again, specially for WordPress.
+                                <img src="images/people/awais.png" alt="" />
+                                <span class="name">Awais Ali</span>
+                            </blockquote>
+                            <blockquote class="testimonial-big text-light">
+                                She exceeded the expectation and the requirements of the project. I appreciate her
+                                hard work and willingness. I am happy with the quality of work. I will likely have
+                                more jobs for her in the future. She is highly recommended.
+                                <img src="images/people/noman.png" alt="" />
+                                <span class="name">M.Noman</span>
+                            </blockquote> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section close -->
+            <!-- section begin -->
+            <section id="section-services" class="dark">
+                <div class="services-main-sec">
+                    <div class="row container bg-box">
+                        <div class="col-lg-12 wow fadeInRight">
+                            <h4 class="title">What I do</h4>
+                            <h2 class="title">Services</h2>
+                            <!-- <div class="title-underline"></div> -->
+                        </div>
+                    </div>
+
+                    <div class="row container justify-content-center pt-5">
+                        <div class="col-lg-5 mb-sm-30 text-center service-left">
+                            <div class="">
+                                <!-- <div class="d-hover-zoom wow fadeInRight">
+                                    <a class="image-popup" href="images/misc/Minahil.jpg">
+                                        <img class="img-fluid" src="images/misc/Minahil.jpg" alt="" />
+                                    </a> 
+                                </div>
+                                 <div class="d-hover-zoom di-small-2 wow fadeInLeft">
+                                    <a class="image-popup" href="images/misc/minahil2.jpg">
+                                        <img src="images/misc/minahil2.jpg" alt="" />
+                                    </a>
+                                </div> -->
+                                <img src="images/misc/wp.jpg" alt="" class="skill-side-img">
+
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6 ml-4 wow fadeInRight" data-wow-delay=".5s">
+                            <h2><span class="id-color grad-head">Wordpress Development</span></h2>
+                            <p>
+                                I provide expert WordPress development services, dedicated to providing high-quality web
+                                solutions for small and medium-sized businesses. My expertise encompasses all phases of
+                                WordPress design and maintenance, including WooCommerce integration for product
+                                modifications, shipping, API integrations, and troubleshooting.<br> I create landing
+                                pages,
+                                product pages, shopping carts, and custom templates tailored to each client’s needs.
+
+                                With a focus on building fast-loading, mobile-responsive websites using minimal plugins,
+                                ensuring optimal site performance. I also address plugin conflicts and other technical
+                                issues
+                                while prioritizing security through regular malware scans, reCAPTCHA, two-factor
+                                authentication, and premium firewalls. Whether you need a new website, enhancements, or
+                                troubleshooting, I provide reliable, professional WordPress solutions tailored to your
+                                needs.
+                            </p>
+                            <!-- <ul class="info-list text-white">
+                                <li><span class="d_title">Full Name: </span><span class="d_value">Minahil Akhtar.</span>
+                                </li>
+                                <li><span class="d_title">Language: </span><span class="d_value">English, Urdu,
+                                        Punjabi.</span></li>
+                                <li><span class="d_title">Phone</span><span class="d_value">‪(815) 513-2697‬</span></li>
+                                <li><span class="d_title">Email: </span><span
+                                        class="d_value">minahilakhter@gmail.com</span></li>
+                            </ul> -->
+
+                        </div>
+                    </div>
+                    <div class="spacer-80"></div>
+                    <ul class="circles">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="row justify-content-center align-items-center pb-5 pt-5" style="gap: 20px;"
+                        data-bgimage="url(images/background/bg.webp) ">
+                        <!-- <div class="col-md-12 mt-3">
+                            <h3 class="s_border">My Services</h3>
+                        </div> -->
+                        <div class="col-lg-4 col-md-6 mb30 service-card">
+                            <div class="f-box f-icon-box text-center ">
+                                <!-- <i class="fa fa-laptop id-color"></i> -->
+                                <img src="images/misc/wp1.gif" style="width: 213px;" alt="">
+                                <div class="fb-text pt-3">
+                                    <h4>WordPress SEO Optimization</h4>
+                                    <p>Enhancing a WordPress website's search engine ranking by implementing SEO best
+                                        practices, keyword optimization, and site performance improvements for better
+                                        visibility.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb30 wow fadeInRight service-card" data-wow-delay=".25s">
+                            <div class="f-box f-icon-box text-center">
+                                <!-- <i class="fa fa-paper-plane-o id-color"></i> -->
+                                <img src="images/misc/wp2.gif" style="width: 200px;" alt="">
+                                <div class="fb-text pt-3">
+                                    <h4>WooCommerce Development</h4>
+                                    <p>I Focused on creating and managing eCommerce websites using WooCommerce,
+                                        including
+                                        setting up products, payment gateways, and inventory management.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb30 wow fadeInRight service-card" data-wow-delay="0s">
+                            <div class="f-box f-icon-box text-center">
+                                <!-- <i class="fa fa-object-group id-color"></i> -->
+                                <img src="images/misc/wp4.gif" style="width: 265px;" alt="">
+                                <div class="fb-text pt-3">
+                                    <h4>Maintenance and Support</h4>
+                                    <p>Providing ongoing support, security updates, backups, troubleshooting, and
+                                        performance optimization to ensure the website runs smoothly.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spacer-80"></div>
+                        <ul class="circles">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="row justify-content-center container pt-5 align-items-center">
+                        <div class="col-lg-5 mb-sm-30 text-center service-left">
+                            <div class="">
+                                <!-- <div class="d-hover-zoom wow fadeInRight">
+                                    <a class="image-popup" href="images/misc/Minahil.jpg">
+                                        <img class="img-fluid" src="images/misc/Minahil.jpg" alt="" />
+                                    </a> 
+                                </div>
+                                 <div class="d-hover-zoom di-small-2 wow fadeInLeft">
+                                    <a class="image-popup" href="images/misc/minahil2.jpg">
+                                        <img src="images/misc/minahil2.jpg" alt="" />
+                                    </a>
+                                </div> -->
+                                <img src="images/misc/shop.webp" alt="" class="skill-side-img">
+
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 ml-4 wow fadeInRight align-items-center" data-wow-delay=".5s">
+                            <h2><span class="id-color grad-head">Shopify Development</span></h2>
+                            <p>
+                                As an Shopify developer, I create fully customized, high-performance online stores
+                                tailored
+                                to meet the unique needs of your business. My expertise extends to building visually
+                                appealing, responsive Shopify stores, and integrating third-party apps to enhance
+                                functionality and optimize your site for a seamless user experience and increased
+                                conversions. I provide advanced e-commerce features such as secure payment gateways,
+                                product
+                                management, and inventory tracking, ensuring your store operates efficiently.<br><br>
+
+                                I also focus on streamlining the checkout process, integrating customer loyalty
+                                programs,
+                                and improving overall site navigation. By implementing scalable solutions, I make it
+                                easy to
+                                manage and grow your store. In addition, I offer ongoing updates, maintenance, and
+                                security
+                                enhancements to keep your store performing at its best. My goal is to deliver a secure,
+                                efficient, and engaging shopping experience for your customers that drives both
+                                satisfaction
+                                and sales growth.
+                            </p>
+                            <!-- <ul class="info-list text-white">
+                                <li><span class="d_title">Full Name: </span><span class="d_value">Minahil Akhtar.</span>
+                                </li>
+                                <li><span class="d_title">Language: </span><span class="d_value">English, Urdu,
+                                        Punjabi.</span></li>
+                                <li><span class="d_title">Phone</span><span class="d_value">‪(815) 513-2697‬</span></li>
+                                <li><span class="d_title">Email: </span><span
+                                        class="d_value">minahilakhter@gmail.com</span></li>
+                            </ul> -->
+
+                        </div>
+                    </div>
+                    <div class="spacer-80"></div>
+                    <div class="row justify-content-center align-items-center pb-5 pt-5" style="gap: 20px;"
+                        data-bgimage="url(images/background/bg.webp) ">
+                        <!-- <div class="col-md-12 mt-3">
+                            <h3 class="s_border">My Services</h3>
+                        </div> -->
+                        <div class="col-lg-4 col-md-6 mb30 service-card">
+                            <div class="f-box f-icon-box text-center ">
+                                <!-- <i class="fa fa-laptop id-color"></i> -->
+                                <img src="images/misc/shop1.gif" style="width: 200px;" alt="">
+                                <div class="fb-text pt-5">
+                                    <h4> Store Optimization </h4>
+                                    <p>Enhancing store performance by improving load times, optimizing product pages,
+                                        and
+                                        ensuring a seamless user experience to increase conversions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb30 wow fadeInRight service-card" data-wow-delay=".25s">
+                            <div class="f-box f-icon-box text-center">
+                                <!-- <i class="fa fa-paper-plane-o id-color"></i> -->
+                                <img src="images/misc/shop2.gif" style="width: 200px;" alt="">
+                                <div class="fb-text pt-3">
+                                    <h4>Shopify Store Setup</h4>
+                                    <p>I specialize in assisting in creating and configuring Shopify stores, including
+                                        theme
+                                        selection, layout design, and initial product uploads.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb30 wow fadeInRight service-card" data-wow-delay="0s">
+                            <div class="f-box f-icon-box text-center">
+                                <!-- <i class="fa fa-object-group id-color"></i> -->
+                                <img src="images/misc/shop3.png!bw700" style="width: 200px;" alt="">
+                                <div class="fb-text pt-3">
+                                    <h4>Customer Support</h4>
+                                    <p>I help implement customer support solutions, including live chat, chatbots, and
+                                        helpdesk systems, to improve customer service and enhance engagement.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="spacer-80"></div>
+                    <ul class="circles">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="row justify-content-center align-items-center container pt-5">
+                        <div class="col-lg-5 mb-sm-30 text-center service-left">
+                            <div class="">
+                                <!-- <div class="d-hover-zoom wow fadeInRight">
+                                    <a class="image-popup" href="images/misc/Minahil.jpg">
+                                        <img class="img-fluid" src="images/misc/Minahil.jpg" alt="" />
+                                    </a> 
+                                </div>
+                                 <div class="d-hover-zoom di-small-2 wow fadeInLeft">
+                                    <a class="image-popup" href="images/misc/minahil2.jpg">
+                                        <img src="images/misc/minahil2.jpg" alt="" />
+                                    </a>
+                                </div> -->
+                                <img src="images/misc/full-stack.avif" alt="" class="skill-side-img">
+
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6 ml-5 wow fadeInRight" data-wow-delay=".5s">
+                            <h2><span class="id-color grad-head">Full-Stack Development</span></h2>
+                            <p>
+                                I offer MERN stack development services, specializing in building dynamic,
+                                high-performance
+                                web applications using MongoDB, Express.js, React, & Node.js. From designing the user
+                                interface to developing the backend, I create fully customized solutions that are
+                                responsive, & optimized for performance. Whether you need a single-page application,
+                                real-time features, or a web solution, MERN stack allows for seamless integration of
+                                technologies, and delivering efficient applications. I focus on creating clean,
+                                maintainable
+                                code & ensuring that your application is secure, user-friendly, with ongoing support to
+                                keep it running smoothly.
+                                Beyond development, I provide ongoing support and maintenance, ensuring your application
+                                remains up-to-date, secure, and optimized for peak performance.
+                            </p>
+                            <!-- <ul class="info-list text-white">
+                                <li><span class="d_title">Full Name: </span><span class="d_value">Minahil Akhtar.</span>
+                                </li>
+                                <li><span class="d_title">Language: </span><span class="d_value">English, Urdu,
+                                        Punjabi.</span></li>
+                                <li><span class="d_title">Phone</span><span class="d_value">‪(815) 513-2697‬</span></li>
+                                <li><span class="d_title">Email: </span><span
+                                        class="d_value">minahilakhter@gmail.com</span></li>
+                            </ul> -->
+
+                        </div>
+                    </div>
+                    <div class="spacer-80"></div>
+                    <div class="row justify-content-center pb-5 align-items-center pt-5" style="gap: 20px;"
+                        data-bgimage="url(images/background/bg.webp) ">
+                        <!-- <div class="col-md-12 mt-3">
+                            <h3 class="s_border">My Services</h3>
+                        </div> -->
+                        <div class="col-lg-4 col-md-6 mb30 service-card">
+                            <div class="f-box f-icon-box text-center ">
+                                <!-- <i class="fa fa-laptop id-color"></i> -->
+                                <img src="images/misc/full2.gif" style="width: 200px;" alt="">
+                                <div class="fb-text pt-3">
+                                    <h4>Backend Development with Node.JS</h4>
+                                    <p>I am proficient in Node.js in the backend. I can build scalable and efficient
+                                        server-side applications using Node.js' event-driven architecture and extensive
+                                        package ecosystem.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb30 wow fadeInRight service-card" data-wow-delay=".25s">
+                            <div class="f-box f-icon-box text-center">
+                                <!-- <i class="fa fa-paper-plane-o id-color"></i> -->
+                                <img src="images/misc/full1.gif" style="width: 200px;" alt="">
+                                <div class="fb-text pt-3">
                                     <h4>Frontend Development with React</h4>
                                     <p>I develop interactive user interfaces that are intuitive and visually pleasing. I
                                         build dynamic & interactive frontend experiences using React's reusable
@@ -265,27 +1038,31 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 mb-sm-30 wow fadeInRight" data-wow-delay="0s">
-                            <div class="f-box f-icon-left f-icon-box">
-                                <i class="fa fa-object-group id-color"></i>
-                                <div class="fb-text">
-                                    <h4>Backend Development with Node.JS</h4>
-                                    <p> I am proficient in Node.js in the backend. I can build scalable and efficient
-                                        server-side applications using Node.js' event-driven architecture and extensive
-                                        package ecosystem.</p>
+                        <div class="col-lg-4 col-md-6 mb30 wow fadeInRight service-card" data-wow-delay="0s">
+                            <div class="f-box f-icon-box text-center">
+                                <!-- <i class="fa fa-object-group id-color"></i> -->
+                                <img src="images/misc/full3.gif" style="width: 160px;" alt="">
+                                <div class="fb-text pt-3">
+                                    <h4>MERN Stack<br> Development </h4>
+                                    <p>I specialize creating RESTful APIs with Express and Node.js to facilitate
+                                        communication between the client-side and server-side of MERN applications.</p>
                                 </div>
+
                             </div>
+
                         </div>
+
+
                     </div>
-                    <div class="spacer-80"></div>
+
                     <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-12 wow fadeInRight">
-                                <!-- <h4 class="title">I'm available for hire</h4> -->
-                                <h2 class="title">My Skills</h2>
-                                <div class="title-underline"></div>
-                            </div>
+                        <!-- <div class="row align-items-center">
+                        <div class="col-lg-12 wow fadeInRight">
+                            <h4 class="title">I'm available for hire</h4>
+                            <h2 class="title">My Skills</h2>
+                            <div class="title-underline"></div>
                         </div>
+                    </div> -->
                         <div class="row">
                             <!--<div class="col-md-6 wow fadeInRight" data-wow-delay=".25s">
                                  <h3 class="s_border">Education</h3>
@@ -328,109 +1105,113 @@
                                 </ul>
                             </div>-->
                         </div>
-                        <div class="spacer-50"></div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <!--                             <h3 class="s_border">Programming Skills</h3> -->
-                                <div class="skill-bar">
-                                    <h5>HTML &amp; CSS</h5>
-                                    <div class="de-progress">
-                                        <div class="value"></div>
-                                        <div class="progress-bar" data-value="98%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-bar">
-                                    <h5>Javascript & React.s</h5>
-                                    <div class="de-progress">
-                                        <div class="value"></div>
-                                        <div class="progress-bar" data-value="97%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-bar">
-                                    <h5>Bootstrap & Tailwind</h5>
-                                    <div class="de-progress">
-                                        <div class="value"></div>
-                                        <div class="progress-bar" data-value="96%"></div>
-                                    </div>
+                        <!-- <div class="spacer-50"></div> -->
+                        <!-- <div class="row">
+                        <div class="col-md-6">
+                                                        <h3 class="s_border">Programming Skills</h3>
+                            <div class="skill-bar">
+                                <h5>HTML &amp; CSS</h5>
+                                <div class="de-progress">
+                                    <div class="value"></div>
+                                    <div class="progress-bar" data-value="98%"></div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <!--                             <h3 class="s_border">Other Skills</h3> -->
-                                <div class="skill-bar">
-                                    <h5>Wordpress</h5>
-                                    <div class="de-progress">
-                                        <div class="value"></div>
-                                        <div class="progress-bar" data-value="97%"></div>
-                                    </div>
+                            <div class="skill-bar">
+                                <h5>Javascript & React.s</h5>
+                                <div class="de-progress">
+                                    <div class="value"></div>
+                                    <div class="progress-bar" data-value="97%"></div>
                                 </div>
-                                <div class="skill-bar">
-                                    <h5>Node.JS and MongoDB</h5>
-                                    <div class="de-progress">
-                                        <div class="value"></div>
-                                        <div class="progress-bar" data-value="97%"></div>
-                                    </div>
+                            </div>
+                            <div class="skill-bar">
+                                <h5>Bootstrap & Tailwind</h5>
+                                <div class="de-progress">
+                                    <div class="value"></div>
+                                    <div class="progress-bar" data-value="96%"></div>
                                 </div>
-                                <div class="skill-bar">
-                                    <h5>Facebook Ads and Graphic Designing</h5>
-                                    <div class="de-progress">
-                                        <div class="value"></div>
-                                        <div class="progress-bar" data-value="90%"></div>
-                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                                                        <h3 class="s_border">Other Skills</h3>
+                            <div class="skill-bar">
+                                <h5>Wordpress</h5>
+                                <div class="de-progress">
+                                    <div class="value"></div>
+                                    <div class="progress-bar" data-value="97%"></div>
                                 </div>
+                            </div>
+                            <div class="skill-bar">
+                                <h5>Node.JS and MongoDB</h5>
+                                <div class="de-progress">
+                                    <div class="value"></div>
+                                    <div class="progress-bar" data-value="97%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <h5>Facebook Ads and Graphic Designing</h5>
+                                <div class="de-progress">
+                                    <div class="value"></div>
+                                    <div class="progress-bar" data-value="90%"></div>
+                                </div>
+                            </div>
 
-                            </div>
+                        </div>
+                    </div> -->
+                    </div>
+                    <!-- <div class="spacer-50"></div> -->
+                    <!-- <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="s_border">Testimonials</h3>
+                    </div>
+                    <div class="col-md-12">
+                        <div id="testimonial-carousel" class="owl-carousel owl-theme wow fadeInUp">
+                            <blockquote class="testimonial-big text-light">
+                                I'm very happy with the job done by Minahil. She was very patient and very quick
+                                definitely knew his stuff well and what she was doing. I definitely recommend her
+                                for any job and hire her again for my future projects.
+                                <img src="images/people/hifza.jpg" alt="" />
+                                <span class="name">DR.Hifza Khan</span>
+                            </blockquote>
+                            <blockquote class="testimonial-big text-light">
+                                She Understood my needs and delivered exactly what I was looking for quickly and
+                                with no hassles. I would recommend her to anyone and will definitely work with her
+                                again, specially for WordPress.
+                                <img src="images/people/awais.png" alt="" />
+                                <span class="name">Awais Ali</span>
+                            </blockquote>
+                            <blockquote class="testimonial-big text-light">
+                                She exceeded the expectation and the requirements of the project. I appreciate her
+                                hard work and willingness. I am happy with the quality of work. I will likely have
+                                more jobs for her in the future. She is highly recommended.
+                                <img src="images/people/noman.png" alt="" />
+                                <span class="name">M.Noman</span>
+                            </blockquote>
                         </div>
                     </div>
-                    <div class="spacer-50"></div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3 class="s_border">Testimonials</h3>
-                        </div>
-                        <div class="col-md-12">
-                            <div id="testimonial-carousel" class="owl-carousel owl-theme wow fadeInUp">
-                                <blockquote class="testimonial-big text-light">
-                                    I'm very happy with the job done by Minahil. She was very patient and very quick
-                                    definitely knew his stuff well and what she was doing. I definitely recommend her
-                                    for any job and hire her again for my future projects.
-                                    <img src="images/people/hifza.jpg" alt="" />
-                                    <span class="name">DR.Hifza Khan</span>
-                                </blockquote>
-                                <blockquote class="testimonial-big text-light">
-                                    She Understood my needs and delivered exactly what I was looking for quickly and
-                                    with no hassles. I would recommend her to anyone and will definitely work with her
-                                    again, specially for WordPress.
-                                    <img src="images/people/awais.png" alt="" />
-                                    <span class="name">Awais Ali</span>
-                                </blockquote>
-                                <blockquote class="testimonial-big text-light">
-                                    She exceeded the expectation and the requirements of the project. I appreciate her
-                                    hard work and willingness. I am happy with the quality of work. I will likely have
-                                    more jobs for her in the future. She is highly recommended.
-                                    <img src="images/people/noman.png" alt="" />
-                                    <span class="name">M.Noman</span>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
+                </div> -->
+
                 </div>
+
             </section>
             <!-- section close -->
 
             <!-- section begin -->
-            <section id="section-portfolio" class="dark port" data-bgimage="url(images/background/4-blur.jpg) top fixed" style= height: 100%;" data-height="100%" >
+            <section id="section-portfolio" class="dark">
                 <div class="container">
                     <!-- portfolio filter begin -->
                     <div class="row">
-                        <div class="col-lg-12 wow fadeInRight">
-                            <h4 class="title">Showcase of my best works</h4>
-                            <h2 class="title">My Portfolio</h2>
-                            <div class="title-underline"></div>
+                        <div class="row container bg-box">
+                            <div class="col-lg-12 wow fadeInRight">
+                                <h4 class="title">Project</h4>
+                                <h2 class="title">My Portfolio</h2>
+                                <!-- <div class="title-underline"></div> -->
+                            </div>
                         </div>
                         <div class="col-md-12 text-center wow fadeInRight" data-wow-delay=".25s">
                             <ul id="filters">
                                 <li><a href="#" data-filter="*" id="btn_all" class="selected">All projects</a></li>
-                                <li><a href="#" data-filter=".wordpress">WordPress</a></li>
-                                <li><a href="#" data-filter=".FED">Front-End-Developement</a></li>
+                                <!-- <li><a href="#" data-filter=".wordpress">WordPress</a></li> -->
+                                <li><a href="#" data-filter=".FED">Graphic</a></li>
                                 <!-- <li><a href="#" data-filter=".photography">photography</a></li>
                                 <li><a href="#" data-filter=".website">website</a></li> -->
                             </ul>
@@ -438,7 +1219,7 @@
                                 class="gallery full-gallery de-gallery zoom-gallery row sequence wow fadeInRight"
                                 data-wow-delay=".5s">
                                 <!-- gallery item -->
-                                <div class="item col-md-4 mb30 gallery-item FED website"
+                                <div class="item col-md-4 mb30 gallery-item FED website border-animate"
                                     data-value="project-details-image.html">
                                     <a class="picframe" href="images/portfolio/artisticpatches.jpg"
                                         title="Artistic Patches" data-source="https://www.artisticpatches.com/">
@@ -464,8 +1245,8 @@
                                 <!-- gallery item -->
                                 <div class="item col-md-4 mb30 gallery-item FED website"
                                     data-value="project-details-image.html">
-                                    <a class="picframe" href="images/portfolio/artisticpunch.jpg"
-                                        title="Artistic Punch" data-source="https://www.artisticpunch.com/">
+                                    <a class="picframe" href="images/portfolio/artisticpunch.jpg" title="Artistic Punch"
+                                        data-source="https://www.artisticpunch.com/">
                                         <span class="overlay">
                                             <span class="d-title">Artistic Punch</span>
                                         </span>
@@ -474,11 +1255,11 @@
                                 </div>
                                 <!-- close gallery item -->
 
-                                 <!-- gallery item -->
-                                <div class="item col-md-4 mb30 gallery-item wordpress website"
+                                <!-- gallery item -->
+                                <div class="item col-md-4 mb30 gallery-item wordpress FED website"
                                     data-value="project-details-image.html">
-                                    <a class="picframe" href="images/portfolio/paramountcleaned.jpg" title="Paramount Cleaned"
-                                        data-source="https://paramountcleaned.com/">
+                                    <a class="picframe" href="images/portfolio/paramountcleaned.jpg"
+                                        title="Paramount Cleaned" data-source="https://paramountcleaned.com/">
                                         <span class="overlay">
                                             <span class="d-title">Paramount Cleaned</span>
                                         </span>
@@ -486,11 +1267,11 @@
                                     </a>
                                 </div>
                                 <!-- close gallery item -->
-                                 <!-- gallery item -->
-                                <div class="item col-md-4 mb30 gallery-item wordpress website"
+                                <!-- gallery item -->
+                                <div class="item col-md-4 mb30 gallery-item wordpress FED website"
                                     data-value="project-details-image.html">
-                                    <a class="picframe" href="images/portfolio/expertpunch.jpg"
-                                        title="Expertspunch" data-source="https://expertspunch.com/">
+                                    <a class="picframe" href="images/portfolio/expertpunch.jpg" title="Expertspunch"
+                                        data-source="https://expertspunch.com/">
                                         <span class="overlay">
                                             <span class="d-title">Expertspunch</span>
                                         </span>
@@ -498,8 +1279,8 @@
                                     </a>
                                 </div>
                                 <!-- close gallery item -->
-                                 <!-- gallery item -->
-                                <div class="item col-md-4 mb30 gallery-item wordpress website"
+                                <!-- gallery item -->
+                                <div class="item col-md-4 mb30 gallery-item wordpress FED website"
                                     data-value="project-details-image.html">
                                     <a class="picframe" href="images/portfolio/egg.jpg" title="Egg Hunger"
                                         data-source="https://www.egghungers.com/">
@@ -510,8 +1291,44 @@
                                     </a>
                                 </div>
                                 <!-- close gallery item -->
-                                  <!-- gallery item -->
-                                <div class="item col-md-4 mb30 gallery-item wordpress website"
+                                <!-- gallery item -->
+                                <div class="item col-md-4 mb30 gallery-item wordpress FED website"
+                                    data-value="project-details-image.html">
+                                    <a class="picframe" href="images/portfolio/softx.png" title="SoftXPro"
+                                        data-source="https://softx.pro/">
+                                        <span class="overlay">
+                                            <span class="d-title">SoftXPro</span>
+                                        </span>
+                                        <img src="images/portfolio/softx.png" alt="" />
+                                    </a>
+                                </div>
+                                <!-- close gallery item -->
+                                <!-- gallery item -->
+                                <div class="item col-md-4 mb30 gallery-item wordpress FED website"
+                                    data-value="project-details-image.html">
+                                    <a class="picframe" href="images/portfolio/smb.png" title="SMB Web Tech"
+                                        data-source="http://smbwebtech.com/">
+                                        <span class="overlay">
+                                            <span class="d-title">SMB Web Tech</span>
+                                        </span>
+                                        <img src="images/portfolio/smb.png" alt="" />
+                                    </a>
+                                </div>
+                                <!-- close gallery item -->
+                                <!-- gallery item -->
+                                <div class="item col-md-4 mb30 gallery-item wordpress FED website"
+                                    data-value="project-details-image.html">
+                                    <a class="picframe" href="images/portfolio/azimaqueen.com.png" title="Azima Queen"
+                                        data-source="http://azimaqueen.com/">
+                                        <span class="overlay">
+                                            <span class="d-title">Azima Queen</span>
+                                        </span>
+                                        <img src="images/portfolio/azimaqueen.com.png" alt="" />
+                                    </a>
+                                </div>
+                                <!-- close gallery item -->
+                                <!-- gallery item -->
+                                <div class="item col-md-4 mb30 gallery-item wordpress FED website"
                                     data-value="project-details-image.html">
                                     <a class="picframe" href="images/portfolio/bullsorbit.jpg" title="Bulls Orbit"
                                         data-source="https://bullsorbit.com/">
@@ -522,7 +1339,8 @@
                                     </a>
                                 </div>
                                 <!-- close gallery item -->
-                                 <!-- gallery item -->
+
+                                <!-- gallery item -->
                                 <div class="item col-md-4 mb30 gallery-item wordpress website">
                                     <a class="picframe" href="images/portfolio/bidfoodhome.jpg" title="Bid Food Home"
                                         data-source="https://bidfoodhome.ae/">
@@ -532,10 +1350,10 @@
                                         <img src="images/portfolio/bidfoodhome.jpg" alt="" />
                                     </a>
                                 </div>
-                                 <!-- close gallery item -->
-                                
+                                <!-- close gallery item -->
+
                                 <!-- gallery item -->
-                                <div class="item col-md-4 mb30 gallery-item FED">
+                                <div class="item col-md-4 mb30 gallery-item FED website">
                                     <a class="picframe" href="images/portfolio/arya.jpeg" title="Arya"
                                         data-source="https://www.aryacollege.in/">
                                         <span class="overlay">
@@ -545,9 +1363,9 @@
                                     </a>
                                 </div>
                                 <!-- close gallery item -->
-                               
-                                 <!-- gallery item -->
-                                <div class="item col-md-4 mb30 gallery-item FED">
+
+                                <!-- gallery item -->
+                                <div class="item col-md-4 mb30 gallery-item FED website">
                                     <a class="picframe" href="images/portfolio/apollo.jpg" title="Apollo"
                                         data-source="https://www.apollosports.pk/">
                                         <span class="overlay">
@@ -557,8 +1375,8 @@
                                     </a>
                                 </div>
                                 <!-- close gallery item -->
-                                  <!-- gallery item -->
-                                <div class="item col-md-4 mb30 gallery-item  wordpress">
+                                <!-- gallery item -->
+                                <div class="item col-md-4 mb30 gallery-item  website wordpress">
                                     <a class="picframe" href="images/portfolio/bluestone.jpeg" title="BlueStone"
                                         data-source="https://www.bluestone.com/">
                                         <span class="overlay">
@@ -569,8 +1387,8 @@
                                 </div>
                                 <!-- close gallery item -->
 
-                                
-                                  <!-- gallery item -->
+
+                                <!-- gallery item -->
                                 <div class="item col-md-4 mb30 gallery-item wordpress website"
                                     data-value="project-details-image.html">
                                     <a class="picframe" href="images/portfolio/nete.jpeg" Nete"
@@ -582,10 +1400,10 @@
                                     </a>
                                 </div>
                                 <!-- close gallery item -->
-                                    <!-- gallery item -->
-                                <div class="item col-md-4 mb30 gallery-item wordpress">
-                                    <a class="picframe" href="images/portfolio/madetrade.jpeg"
-                                        title="Made Trade" data-source="https://www.madetrade.com/">
+                                <!-- gallery item -->
+                                <div class="item col-md-4 mb30 gallery-item wordpress website">
+                                    <a class="picframe" href="images/portfolio/madetrade.jpeg" title="Made Trade"
+                                        data-source="https://www.madetrade.com/">
                                         <span class="overlay">
                                             <span class="d-title">Made Tradeg</span>
                                         </span>
@@ -593,7 +1411,7 @@
                                     </a>
                                 </div>
                                 <!-- close gallery item -->
-                                  <!-- gallery item -->
+                                <!-- gallery item -->
                                 <div class="item col-md-4 mb30 gallery-item wordpress website"
                                     data-value="project-details-image.html">
                                     <a class="picframe" href="images/portfolio/coverscart.jpeg" title="Covers Cart"
@@ -605,7 +1423,7 @@
                                     </a>
                                 </div>
                                 <!-- close gallery item -->
-                                   <!-- gallery item -->
+                                <!-- gallery item -->
                                 <div class="item col-md-4 mb30 gallery-item wordpress website"
                                     data-value="project-details-image.html">
                                     <a class="picframe" href="images/portfolio/lunajets.jpeg" title="LunaJets"
@@ -617,11 +1435,11 @@
                                     </a>
                                 </div>
                                 <!-- close gallery item -->
-                             <!-- gallery item -->
+                                <!-- gallery item -->
                                 <div class="item col-md-4 mb30 gallery-item wordpress website"
                                     data-value="project-details-image.html">
                                     <a class="picframe" href="images/portfolio/theali.jpeg" title="The Ali Ahmed"
-                                        data-source="https://thedigitaldukaan.com/">
+                                        data-source="https://thealiahmed.com/">
                                         <span class="overlay">
                                             <span class="d-title">The Ali Ahmed</span>
                                         </span>
@@ -629,7 +1447,7 @@
                                     </a>
                                 </div>
                                 <!-- close gallery item -->
-                                  <!-- gallery item -->
+                                <!-- gallery item -->
                                 <div class="item col-md-4 mb30 gallery-item wordpress website"
                                     data-value="project-details-image.html">
                                     <a class="picframe" href="images/portfolio/skz.jpg" title="SKZ Foundation"
@@ -641,9 +1459,9 @@
                                     </a>
                                 </div>
                                 <!-- close gallery item -->
-                                
-                                  <!-- gallery item -->
-                                <div class="item col-md-4 mb30 gallery-item FED"
+
+                                <!-- gallery item -->
+                                <div class="item col-md-4 mb30 gallery-item FED website"
                                     data-value="project-details-image.html">
                                     <a class="picframe" href="images/portfolio/only garments.jpg"
                                         title="Only Garment Racks" data-source="https://www.onlygarmentracks.com/>">
@@ -654,21 +1472,21 @@
                                     </a>
                                 </div>
                                 <!-- close gallery item -->
-                                 
-                                  <!-- gallery item -->
-                                <div class="item col-md-4 mb30 gallery-item FED"
+
+                                <!-- gallery item -->
+                                <div class="item col-md-4 mb30 gallery-item FED website"
                                     data-value="project-details-image.html">
-                                    <a class="picframe" href="images/portfolio/HD Direct .jpg"
+                                    <a class="picframe" href="images/portfolio/harddiskdirect.com.jpg"
                                         title="Hard Disk Direct" data-source="https://harddiskdirect.com/">
                                         <span class="overlay">
                                             <span class="d-title">Hard Disk Direct</span>
                                         </span>
-                                        <img src="images/portfolio/HD Direct .jpg" alt="" />
+                                        <img src="images/portfolio/harddiskdirect.com.jpg" alt="" />
                                     </a>
                                 </div>
                                 <!-- close gallery item -->
-                                 <!-- gallery item -->
-                                <div class="item col-md-4 mb30 gallery-item wordpress">
+                                <!-- gallery item -->
+                                <div class="item col-md-4 mb30 gallery-item wordpress website">
                                     <a class="picframe" href="images/portfolio/digitizers.jpg" title="Digitixers"
                                         data-source="https://digitixers.com/">
                                         <span class="overlay">
@@ -678,11 +1496,11 @@
                                     </a>
                                 </div>
                                 <!-- close gallery item -->
-                                 <!-- gallery item -->
+                                <!-- gallery item -->
                                 <div class="item col-md-4 mb30 gallery-item wordpress website"
                                     data-value="project-details-image.html">
-                                    <a class="picframe" href="images/portfolio/maxime.jpg"
-                                        title="Maxime Clinics" data-source="https://maximeclinics.com/">
+                                    <a class="picframe" href="images/portfolio/maxime.jpg" title="Maxime Clinics"
+                                        data-source="https://maximeclinics.com/">
                                         <span class="overlay">
                                             <span class="d-title">Maxime Clinics</span>
                                         </span>
@@ -690,7 +1508,7 @@
                                     </a>
                                 </div>
                                 <!-- close gallery item -->
-                                 <!-- gallery item -->
+                                <!-- gallery item -->
                                 <div class="item col-md-4 mb30 gallery-item wordpress website"
                                     data-value="project-details-image.html">
                                     <a class="picframe" href="images/portfolio/ESBAP.jpeg" title="ESBAP"
@@ -702,7 +1520,7 @@
                                     </a>
                                 </div>
                                 <!-- close gallery item -->
-                                  <!-- gallery item -->
+                                <!-- gallery item -->
                                 <div class="item col-md-4 mb30 gallery-item wordpress website"
                                     data-value="project-details-image.html">
                                     <a class="picframe" href="images/portfolio/SI Karigar.jpeg" title="Sikarigar"
@@ -714,12 +1532,12 @@
                                     </a>
                                 </div>
                                 <!-- close gallery item -->
-                               
-                                 <!-- gallery item -->
+
+                                <!-- gallery item -->
                                 <div class="item col-md-4 mb30 gallery-item wordpress website"
                                     data-value="project-details-image.html">
-                                    <a class="picframe" href="images/portfolio/khoe.jpg"
-                                        title="Khoe Jewellery" data-source="https://www.khoejewellery.com/">
+                                    <a class="picframe" href="images/portfolio/khoe.jpg" title="Khoe Jewellery"
+                                        data-source="https://www.khoejewellery.com/">
                                         <span class="overlay">
                                             <span class="d-title">Khoe Jewellery</span>
                                         </span>
@@ -730,29 +1548,29 @@
                                 <!-- gallery item -->
                                 <div class="item col-md-4 mb30 gallery-item wordpress website"
                                     data-value="project-details-image.html">
-                                    <a class="picframe" href="images/portfolio/memoryclearance.jpeg" title="Memory Clearance"
-                                        data-source="https://www.memoryclearance.com/">
+                                    <a class="picframe" href="images/portfolio/memoryclearance.com.jpg"
+                                        title="Memory Clearance" data-source="https://www.memoryclearance.com/">
                                         <span class="overlay">
                                             <span class="d-title">Memory Clearance</span>
                                         </span>
-                                        <img src="images/portfolio/memoryclearance.jpeg" alt="" />
+                                        <img src="images/portfolio/memoryclearance.com.jpg" alt="" />
                                     </a>
                                 </div>
                                 <!-- close gallery item -->
-                                  <!-- gallery item -->
+                                <!-- gallery item -->
                                 <div class="item col-md-4 mb30 gallery-item wordpress website"
                                     data-value="project-details-image.html">
-                                    <a class="picframe" href="images/portfolio/therapy.jpg" title="Psychology Therapy"
-                                        data-source="https://psychologyandtherapies.com/">
+                                    <a class="picframe" href="images/portfolio/psychologyandtherapies.com.jpg"
+                                        title="Psychology Therapy" data-source="https://psychologyandtherapies.com/">
                                         <span class="overlay">
                                             <span class="d-title">Psychology Therapy</span>
                                         </span>
-                                        <img src="images/portfolio/therapy.jpg" alt="" />
+                                        <img src="images/portfolio/psychologyandtherapies.com.jpg" alt="" />
                                     </a>
                                 </div>
                                 <!-- close gallery item -->
-                                
-                                   <!-- gallery item -->
+
+                                <!-- gallery item -->
                                 <div class="item col-md-4 mb30 gallery-item wordpress website"
                                     data-value="project-details-image.html">
                                     <a class="picframe" href="images/portfolio/dilara.jpg" title="Dilara Pret"
@@ -767,22 +1585,22 @@
                                 <!-- gallery item -->
                                 <div class="item col-md-4 mb30 gallery-item wordpress website"
                                     data-value="project-details-image.html">
-                                    <a class="picframe" href="images/portfolio/BMA China.jpg" title="BMA China"
+                                    <a class="picframe" href="images/portfolio/bmachina.com.jpg" title="BMA China"
                                         data-source="https://www.bmachina.com/">
                                         <span class="overlay">
                                             <span class="d-title">BMA China </span>
                                         </span>
-                                        <img src="images/portfolio/BMA China.jpg" alt="" />
+                                        <img src="images/portfolio/bmachina.com.jpg" alt="" />
                                     </a>
                                 </div>
                                 <!-- close gallery item -->
-                                 
-                               
-                                 <!-- gallery item -->
+
+
+                                <!-- gallery item -->
                                 <div class="item col-md-4 mb30 gallery-item wordpress website"
                                     data-value="project-details-image.html">
-                                    <a class="picframe" href="images/portfolio/dazpay.jpeg"
-                                        title="Dazpaywallet" data-source="https://dazpay.com/">
+                                    <a class="picframe" href="images/portfolio/dazpay.jpeg" title="Dazpaywallet"
+                                        data-source="https://dazpay.com/">
                                         <span class="overlay">
                                             <span class="d-title">Dazpaywallet</span>
                                         </span>
@@ -790,11 +1608,11 @@
                                     </a>
                                 </div>
                                 <!-- close gallery item -->
-                                 <!-- gallery item -->
+                                <!-- gallery item -->
                                 <div class="item col-md-4 mb30 gallery-item wordpress website"
                                     data-value="project-details-image.html">
-                                    <a class="picframe" href="images/portfolio/Aswak.jpg"
-                                        title="Aswak Manpower Bureau" data-source="https://aswakmanpower.com/">
+                                    <a class="picframe" href="images/portfolio/Aswak.jpg" title="Aswak Manpower Bureau"
+                                        data-source="https://aswakmanpower.com/">
                                         <span class="overlay">
                                             <span class="d-title">Aswak Manpower Bureau</span>
                                         </span>
@@ -802,274 +1620,256 @@
                                     </a>
                                 </div>
                                 <!-- close gallery item -->
-                              
+
                                 <!-- gallery item -->
                                 <div class="item col-md-4 mb30 gallery-item wordpress website"
                                     data-value="project-details-image.html">
-                                    <a class="picframe" href="images/portfolio/Aerospace.png" title="Computer Solutions"
-                                        data-source="https://computersolutions.com/">
+                                    <a class="picframe" href="images/portfolio/takhayyul.com.jpg"
+                                        title="Takhayyul" data-source="https://takhayyul.com/">
                                         <span class="overlay">
-                                            <span class="d-title">Computer Solutions</span>
+                                            <span class="d-title">Takhayyul</span>
                                         </span>
-                                        <img src="images/portfolio/Aerospace.png" alt="" />
+                                        <img src="images/portfolio/takhayyul.com.jpg" alt="" />
                                     </a>
                                 </div>
                                 <!-- close gallery item -->
-                                 <!-- gallery item -->
+                                <!-- gallery item -->
                                 <div class="item col-md-4 mb30 gallery-item wordpress website"
                                     data-value="project-details-image.html">
-                                    <a class="picframe" href="images/portfolio/SAT.jpg"
+                                    <a class="picframe" href="images/portfolio/southasiatimes.org.jpg"
                                         title="South Asia Times" data-source="https://southasiatimes.org/">
                                         <span class="overlay">
                                             <span class="d-title">South Asia Times</span>
                                         </span>
-                                        <img src="images/portfolio/SAT.jpg" alt="" />
+                                        <img src="images/portfolio/southasiatimes.org.jpg" alt="" />
                                     </a>
                                 </div>
                                 <!-- close gallery item -->
-                                  <!-- gallery item -->
+                                <!-- gallery item -->
                                 <div class="item col-md-4 mb30 gallery-item wordpress website"
                                     data-value="project-details-image.html">
-                                    <a class="picframe" href="images/portfolio/www.innercitymetals.com.au.png"
+                                    <a class="picframe" href="images/portfolio/innercitymetals.com.au.jpg"
                                         title="Inner City Metals" data-source="http://www.innercitymetals.com.au/">
                                         <span class="overlay">
                                             <span class="d-title">Inner City Metals</span>
                                         </span>
-                                        <img src="images/portfolio/www.innercitymetals.com.au.png" alt="" />
+                                        <img src="images/portfolio/innercitymetals.com.au.jpg" alt="" />
                                     </a>
                                 </div>
                                 <!-- close gallery item -->
-                               <!-- gallery item -->
-                                <div class="item col-md-4 mb30 gallery-item wordpress">
-                                    <a class="picframe" href="images/portfolio/artistic Sports wear.jpg"
+                                <!-- gallery item -->
+                                <div class="item col-md-4 mb30 gallery-item wordpress website">
+                                    <a class="picframe" href="images/portfolio/Artisticsports.jpg"
                                         title="Artistic Sports Wear" data-source="https://www.artisticsportswear.com/">
                                         <span class="overlay">
                                             <span class="d-title">Artistic Sports Wear</span>
                                         </span>
-                                        <img src="images/portfolio/artistic Sports wear.jpg" alt="" />
+                                        <img src="images/portfolio/Artisticsports.jpg" alt="" />
                                     </a>
                                 </div>
                                 <!-- close gallery item -->
-                                 <!-- gallery item -->
+                                <!-- gallery item -->
                                 <div class="item col-md-4 mb30 gallery-item wordpress website"
                                     data-value="project-details-image.html">
-                                    <a class="picframe" href="images/portfolio/Techsol Planet.png"
+                                    <a class="picframe" href="images/portfolio/techsolplanet.com.jpg"
                                         title="Techsol Planet" data-source="https://techsolplanet.com/">
                                         <span class="overlay">
                                             <span class="d-title">Techsol Planet</span>
                                         </span>
-                                        <img src="images/portfolio/Techsol Planet.png" alt="" />
+                                        <img src="images/portfolio/techsolplanet.com.jpg" alt="" />
                                     </a>
                                 </div>
                                 <!-- close gallery item -->
                                 <!-- gallery item -->
                                 <div class="item col-md-4 mb30 gallery-item wordpress website"
                                     data-value="project-details-image.html">
-                                    <a class="picframe" href="images/portfolio/Roshnee Enterprises.jpg"
-                                        title="Roshnee Enterprises" data-source="http://roshneeenterprises.com/">
+                                    <a class="picframe" href="images/portfolio/writerly.uk.jpg"
+                                        title="Writerly" data-source="https://www.writerly.uk/">
                                         <span class="overlay">
-                                            <span class="d-title">Roshnee Enterprises</span>
+                                            <span class="d-title">Writerly</span>
                                         </span>
-                                        <img src="images/portfolio/Roshnee Enterprises.jpg" alt="" />
+                                        <img src="images/portfolio/writerly.uk.jpg" alt="" />
                                     </a>
                                 </div>
-                                <!-- close gallery item -->
-                         <!-- gallery item -->
-                                <div class="item col-md-4 mb30 gallery-item FED"
-                                    data-value="project-details-image.html">
-                                    <a class="picframe" href="images/portfolio/pricing plan.png"
-                                        title="Pricing component with toggle"
-                                        data-source="https://minahilakhtar.github.io/Pricing-Plan/">
-                                        <span class="overlay">
-                                            <span class="d-title">Pricing component with toggle</span>
-                                        </span>
-                                        <img src="images/portfolio/pricing plan.png" alt="" />
-                                    </a>
-                                </div>
-                                <!-- close gallery item -->
-                               
-                                <!-- close gallery item -->
-                                <!-- gallery item -->
-                                <div class="item col-md-4 mb30 gallery-item FED"
-                                    data-value="project-details-image.html">
-                                    <a class="picframe" href="images/portfolio/social.png" title="Social proof section"
-                                        data-source="https://minahilakhtar.github.io/social-proof-section-master/">
-                                        <span class="overlay">
-                                            <span class="d-title">Social proof section</span>
-                                        </span>
-                                        <img src="images/portfolio/social.png" alt="" />
-                                    </a>
-                                </div>
-                                <!-- close gallery item -->
-                                <!-- gallery item -->
-                                <div class="item col-md-4 mb30 gallery-item FED"
-                                    data-value="project-details-image.html">
-                                    <a class="picframe" href="images/portfolio/Stats.png"
-                                        title="stats preview card component"
-                                        data-source="https://minahilakhtar.github.io/stats-preview-card-component/">
-                                        <span class="overlay">
-                                            <span class="d-title">stats preview card component</span>
-                                        </span>
-                                        <img src="images/portfolio/Stats.png" alt="" />
-                                    </a>
-                                </div>
-                                <!-- close gallery item -->
+                                <!-- close gallery item
+                            gallery item
+                            <div class="item col-md-4 mb30 gallery-item FED" data-value="project-details-image.html">
+                                <a class="picframe" href="images/portfolio/pricing plan.png"
+                                    title="Pricing component with toggle"
+                                    data-source="https://minahilakhtar.github.io/Pricing-Plan/">
+                                    <span class="overlay">
+                                        <span class="d-title">Pricing component with toggle</span>
+                                    </span>
+                                    <img src="images/portfolio/pricing plan.png" alt="" />
+                                </a>
+                            </div>
+                            close gallery item
 
-                                <!-- gallery item -->
-                                <div class="item col-md-4 mb30 gallery-item FED"
-                                    data-value="project-details-image.html">
-                                    <a class="picframe" href="images/portfolio/preview card.png"
-                                        title="column preview card component"
-                                        data-source="https://minahilakhtar.github.io/card-component-main/">
-                                        <span class="overlay">
-                                            <span class="d-title">column preview card component</span>
-                                        </span>
-                                        <img src="images/portfolio/preview card.png" alt="" />
-                                    </a>
-                                </div>
-                                <!-- close gallery item -->
-                                <!-- gallery item -->
-                                <div class="item col-md-4 mb30 gallery-item FED"
-                                    data-value="project-details-image.html">
-                                    <a class="picframe" href="images/portfolio/profile card.png"
-                                        title="column profile card component"
-                                        data-source="https://minahilakhtar.github.io/Profile-card-component/">
-                                        <span class="overlay">
-                                            <span class="d-title">column profile card component</span>
-                                        </span>
-                                        <img src="images/portfolio/profile card.png" alt="" />
-                                    </a>
-                                </div>
+                            close gallery item
+                            gallery item
+                            <div class="item col-md-4 mb30 gallery-item FED" data-value="project-details-image.html">
+                                <a class="picframe" href="images/portfolio/social.png" title="Social proof section"
+                                    data-source="https://minahilakhtar.github.io/social-proof-section-master/">
+                                    <span class="overlay">
+                                        <span class="d-title">Social proof section</span>
+                                    </span>
+                                    <img src="images/portfolio/social.png" alt="" />
+                                </a>
+                            </div>
+                            close gallery item
+                            gallery item
+                            <div class="item col-md-4 mb30 gallery-item FED" data-value="project-details-image.html">
+                                <a class="picframe" href="images/portfolio/Stats.png"
+                                    title="stats preview card component"
+                                    data-source="https://minahilakhtar.github.io/stats-preview-card-component/">
+                                    <span class="overlay">
+                                        <span class="d-title">stats preview card component</span>
+                                    </span>
+                                    <img src="images/portfolio/Stats.png" alt="" />
+                                </a>
+                            </div>
+                            close gallery item
 
-                                <!-- close gallery item -->
-                               
-                                <!-- gallery item -->
-                                <div class="item col-md-4 mb30 gallery-item FED"
-                                    data-value="project-details-image.html">
-                                    <a class="picframe" href="images/portfolio/Huddle.png" title="Huddle landing page"
-                                        data-source="https://minahilakhtar.github.io/Huddle-landing-page/">
-                                        <span class="overlay">
-                                            <span class="d-title">Huddle landing page</span>
-                                        </span>
-                                        <img src="images/portfolio/Huddle.png" alt="" />
-                                    </a>
-                                </div>
-                                <!-- close gallery item -->
-                                <!-- gallery item -->
-                                <div class="item col-md-4 mb30 gallery-item FED">
-                                    <a class="picframe" href="images/portfolio/music.png" title="Music" data-source="#">
-                                        <span class="overlay">
-                                            <span class="d-title">Music</span>
-                                        </span>
-                                        <img src="images/portfolio/music.png" alt="" />
-                                    </a>
-                                </div>
-                                <!-- close gallery item -->
-                               
-                                <!-- gallery item -->
-                                <div class="item col-md-4 mb30 gallery-item FED">
-                                    <a class="picframe" href="images/portfolio/sgame.png" title="Snake Game"
-                                        data-source="https://minahilakhtar.github.io/snakegame/">
-                                        <span class="overlay">
-                                            <span class="d-title">Snake Game</span>
-                                        </span>
-                                        <img src="images/portfolio/sgame.png" alt="" />
-                                    </a>
-                                </div>
-                                <!-- close gallery item -->
-                               
-                                <!-- gallery item -->
-                                <div class="item col-md-4 mb30 gallery-item FED">
-                                    <a class="picframe" href="images/portfolio/mblog.png" title="Mblog"
-                                        data-source="https://minahilakhtar.github.io/Mblog/">
-                                        <span class="overlay">
-                                            <span class="d-title">Mblog</span>
-                                        </span>
-                                        <img src="images/portfolio/mblog.png" alt="" />
-                                    </a>
-                                </div>
-                                <!-- close gallery item -->
-                                <!-- gallery item -->
-                                <div class="item col-md-4 mb30 gallery-item FED"
-                                    data-value="project-details-image.html">
-                                    <a class="picframe" href="images/portfolio/weatherapp.png" title="Weather App"
-                                        data-source="https://minahilakhtar.github.io/weatherapp/">
-                                        <span class="overlay">
-                                            <span class="d-title">Weather App</span>
-                                        </span>
-                                        <img src="images/portfolio/weatherapp.png" alt="" />
-                                    </a>
-                                </div>
-                                <!-- close gallery item -->
+                            gallery item
+                            <div class="item col-md-4 mb30 gallery-item FED" data-value="project-details-image.html">
+                                <a class="picframe" href="images/portfolio/preview card.png"
+                                    title="column preview card component"
+                                    data-source="https://minahilakhtar.github.io/card-component-main/">
+                                    <span class="overlay">
+                                        <span class="d-title">column preview card component</span>
+                                    </span>
+                                    <img src="images/portfolio/preview card.png" alt="" />
+                                </a>
+                            </div>
+                            close gallery item
+                            gallery item
+                            <div class="item col-md-4 mb30 gallery-item FED" data-value="project-details-image.html">
+                                <a class="picframe" href="images/portfolio/profile card.png"
+                                    title="column profile card component"
+                                    data-source="https://minahilakhtar.github.io/Profile-card-component/">
+                                    <span class="overlay">
+                                        <span class="d-title">column profile card component</span>
+                                    </span>
+                                    <img src="images/portfolio/profile card.png" alt="" />
+                                </a>
+                            </div>
+                            close gallery item
+                            gallery item
+                            <div class="item col-md-4 mb30 gallery-item FED" data-value="project-details-image.html">
+                                <a class="picframe" href="images/portfolio/Huddle.png" title="Huddle landing page"
+                                    data-source="https://minahilakhtar.github.io/Huddle-landing-page/">
+                                    <span class="overlay">
+                                        <span class="d-title">Huddle landing page</span>
+                                    </span>
+                                    <img src="images/portfolio/Huddle.png" alt="" />
+                                </a>
+                            </div>
+                            close gallery item
+                            gallery item
+                            <div class="item col-md-4 mb30 gallery-item FED">
+                                <a class="picframe" href="images/portfolio/music.png" title="Music" data-source="#">
+                                    <span class="overlay">
+                                        <span class="d-title">Music</span>
+                                    </span>
+                                    <img src="images/portfolio/music.png" alt="" />
+                                </a>
+                            </div>
+                            close gallery item
+                            gallery item
+                            <div class="item col-md-4 mb30 gallery-item FED">
+                                <a class="picframe" href="images/portfolio/sgame.png" title="Snake Game"
+                                    data-source="https://minahilakhtar.github.io/snakegame/">
+                                    <span class="overlay">
+                                        <span class="d-title">Snake Game</span>
+                                    </span>
+                                    <img src="images/portfolio/sgame.png" alt="" />
+                                </a>
+                            </div>
+                            close gallery item
+                            gallery item
+                            <div class="item col-md-4 mb30 gallery-item FED">
+                                <a class="picframe" href="images/portfolio/mblog.png" title="Mblog"
+                                    data-source="https://minahilakhtar.github.io/Mblog/">
+                                    <span class="overlay">
+                                        <span class="d-title">Mblog</span>
+                                    </span>
+                                    <img src="images/portfolio/mblog.png" alt="" />
+                                </a>
+                            </div>
+                            close gallery item
+                            gallery item
+                            <div class="item col-md-4 mb30 gallery-item FED" data-value="project-details-image.html">
+                                <a class="picframe" href="images/portfolio/weatherapp.png" title="Weather App"
+                                    data-source="https://minahilakhtar.github.io/weatherapp/">
+                                    <span class="overlay">
+                                        <span class="d-title">Weather App</span>
+                                    </span>
+                                    <img src="images/portfolio/weatherapp.png" alt="" />
+                                </a>
+                            </div>
+                            close gallery item
 
-                               
-                                <!-- gallery item -->
-                                <div class="item col-md-4 mb30 gallery-item FED">
-                                    <a class="picframe" href="images/portfolio/oder summary.png"
-                                        title="Order summary component"
-                                        data-source="https://minahilakhtar.github.io/order-summary-component-main/">
-                                        <span class="overlay">
-                                            <span class="d-title">Order summary component</span>
-                                        </span>
-                                        <img src="images/portfolio/oder summary.png" alt="" />
-                                    </a>
-                                </div>
-                                <!-- close gallery item -->
 
-                                <!-- gallery item -->
-                                <div class="item col-md-4 mb30 gallery-item FED">
-                                    <a class="picframe" href="images/portfolio/mtictacteo.png" title="M_tictacteo"
-                                        data-source="https://minahilakhtar.github.io/tictactoe/">
-                                        <span class="overlay">
-                                            <span class="d-title">M_tictactoe</span>
-                                        </span>
-                                        <img src="images/portfolio/mtictacteo.png" alt="" />
-                                    </a>
-                                </div>
-                                <!-- close gallery item -->
-                                   <!-- close gallery item -->
-                                  <!-- gallery item -->
-                                <div class="item col-md-4 mb30 gallery-item FED">
-                                    <a class="picframe" href="images/portfolio/cheet.png" title="Cheet Sheet"
-                                        data-source="https://minahilakhtar.github.io/cheetsheet/">
-                                        <span class="overlay">
-                                            <span class="d-title">Cheet Sheet</span>
-                                        </span>
-                                        <img src="images/portfolio/cheet.png" alt="" />
-                                    </a>
-                                </div>
-                                <!-- close gallery item -->
-                                
-                                <!-- gallery item -->
-                                <div class="item col-md-4 mb30 gallery-item FED"
-                                    data-value="project-details-image.html">
-                                    <a class="picframe" href="images/portfolio/interactive.png"
-                                        title="Interactive pricing component"
-                                        data-source="https://minahilakhtar.github.io/Interactive-pricing-component/">
-                                        <span class="overlay">
-                                            <span class="d-title">Interactive pricing component</span>
-                                        </span>
-                                        <img src="images/portfolio/interactive.png" alt="" />
-                                    </a>
-                                </div>
-                                <!-- close gallery item -->
-                              
-                                
-                              <!-- gallery item -->
-                                <div class="item col-md-4 mb30 gallery-item FED"
-                                    data-value="project-details-image.html">
-                                    <a class="picframe" href="images/portfolio/article.png"
-                                        title="Article preview component"
-                                        data-source="https://minahilakhtar.github.io/Article-preview-component/">
-                                        <span class="overlay">
-                                            <span class="d-title">Article preview component</span>
-                                        </span>
-                                        <img src="images/portfolio/article.png" alt="" />
-                                    </a>
-                                </div>
-                                <!-- close gallery item -->
-                               
-                              
+                            gallery item
+                            <div class="item col-md-4 mb30 gallery-item FED">
+                                <a class="picframe" href="images/portfolio/oder summary.png"
+                                    title="Order summary component"
+                                    data-source="https://minahilakhtar.github.io/order-summary-component-main/">
+                                    <span class="overlay">
+                                        <span class="d-title">Order summary component</span>
+                                    </span>
+                                    <img src="images/portfolio/oder summary.png" alt="" />
+                                </a>
+                            </div>
+                            close gallery item
+                            gallery item
+                            <div class="item col-md-4 mb30 gallery-item FED">
+                                <a class="picframe" href="images/portfolio/mtictacteo.png" title="M_tictacteo"
+                                    data-source="https://minahilakhtar.github.io/tictactoe/">
+                                    <span class="overlay">
+                                        <span class="d-title">M_tictactoe</span>
+                                    </span>
+                                    <img src="images/portfolio/mtictacteo.png" alt="" />
+                                </a>
+                            </div>
+                            close gallery item
+                            gallery item
+                            <div class="item col-md-4 mb30 gallery-item FED">
+                                <a class="picframe" href="images/portfolio/cheet.png" title="Cheet Sheet"
+                                    data-source="https://minahilakhtar.github.io/cheetsheet/">
+                                    <span class="overlay">
+                                        <span class="d-title">Cheet Sheet</span>
+                                    </span>
+                                    <img src="images/portfolio/cheet.png" alt="" />
+                                </a>
+                            </div>
+                            close gallery item
+                            gallery item
+                            <div class="item col-md-4 mb30 gallery-item FED" data-value="project-details-image.html">
+                                <a class="picframe" href="images/portfolio/interactive.png"
+                                    title="Interactive pricing component"
+                                    data-source="https://minahilakhtar.github.io/Interactive-pricing-component/">
+                                    <span class="overlay">
+                                        <span class="d-title">Interactive pricing component</span>
+                                    </span>
+                                    <img src="images/portfolio/interactive.png" alt="" />
+                                </a>
+                            </div>
+                            close gallery item
+                            gallery item
+                            <div class="item col-md-4 mb30 gallery-item FED" data-value="project-details-image.html">
+                                <a class="picframe" href="images/portfolio/article.png"
+                                    title="Article preview component"
+                                    data-source="https://minahilakhtar.github.io/Article-preview-component/">
+                                    <span class="overlay">
+                                        <span class="d-title">Article preview component</span>
+                                    </span>
+                                    <img src="images/portfolio/article.png" alt="" />
+                                </a>
+                            </div>
+                            close gallery item -->
+
+
 
                             </div>
                         </div>
@@ -1079,208 +1879,285 @@
             </section>
             <!-- section close -->
 
-           <!-- section begin -->
-        <section
-          id="section-certificates"
-          class="dark"
-          data-bgimage="url(images/background/4-blur.jpg) top fixed"
-        >
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12 wow fadeInRight">
-                <h4 class="title">This is my story</h4>
-                <h2 class="title">My Certificates</h2>
-                <div class="title-underline"></div>
-              </div>
-            </div>
-            <div class="row wow fadeInRight" data-wow-delay=".25s">
-              <div class="col-lg-4 col-md-6 mb30">
-                <div class="bloglist item">
-                  <div class="post-content">
-                    <div class="post-image d-hover-zoom">
-                      <a class="image-popup" href="images/news/html.jpg">
-                        <img alt="" src="images/news/html.jpg" />
-                      </a>
-                      <!-- <div class="post-info">
-                                            <div class="inner">
-                                                <span class="post-date">10 Dec 2020</span>
-                                            </div>
-                                        </div> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 mb30">
-                <div class="bloglist item">
-                  <div class="post-content">
-                    <div class="post-image d-hover-zoom">
-                      <a class="image-popup" href="images/news/css.jpg">
-                        <img alt="" src="images/news/css.jpg" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 mb30">
-                <div class="bloglist item">
-                  <div class="post-content">
-                    <div class="post-image d-hover-zoom">
-                      <a class="image-popup" href="images/news/js.jpg">
-                        <img alt="" src="images/news/js.jpg" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 mb30">
-                <div class="bloglist item">
-                  <div class="post-content">
-                    <div class="post-image d-hover-zoom">
-                      <a class="image-popup" href="images/news/dm.jpg">
-                        <img alt="" src="images/news/dm.jpg" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 mb30">
-                <div class="bloglist item">
-                  <div class="post-content">
-                    <div style="height: 267px" class="post-image d-hover-zoom">
-                      <a class="image-popup" href="images/news/Chingu.jpg">
-                        <img alt="" src="images/news/Chingu.jpg" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 mb30">
-                <div class="bloglist item">
-                  <div class="post-content">
-                    <div class="post-image d-hover-zoom">
-                      <a class="image-popup" href="images/news/seo.jpg">
-                        <img alt="" src="images/news/seo.jpg" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 mb30">
-                <div class="bloglist item">
-                  <div class="post-content">
-                    <div style="height: 262px" class="post-image d-hover-zoom">
-                      <a class="image-popup" href="images/news/css and js.jpg">
-                        <img alt="" src="images/news/css and js.jpg" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 mb30">
-                <div class="bloglist item">
-                  <div class="post-content">
-                    <div style="height: 267px" class="post-image d-hover-zoom">
-                      <a class="image-popup" href="images/news/femprow.jpg">
-                        <img alt="" src="images/news/femprow.jpg" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 mb30">
-                <div class="bloglist item">
-                    <div class="post-content">
-                       <div class="post-image d-hover-zoom">
-                         <a class="image-popup" href="images/news/ggarage.jpg">
-                         <img alt="" src="images/news/ggarage.jpg" />
-                          </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 mb30">
-                <div class="bloglist item">
-                  <div class="post-content">
-                    <div class="post-image d-hover-zoom">
-                      <a class="image-popup" href="images/news/0001.jpg">
-                        <img alt="" src="images/news/0001.jpg" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 mb30">
-                <div class="bloglist item">
-                  <div class="post-content">
-                    <div style="height: 267px" class="post-image d-hover-zoom">
-                      <a
-                        class="image-popup"
-                        href="images/news/Career-Development-.jpg"
-                      >
-                        <img alt="" src="images/news/Career-Development-.jpg" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          
-              
-            </div>
-          </div>
-        </section>
-        <!-- section close -->
-
             <!-- section begin -->
-            <section id="section-contact" class="dark" data-bgimage="url(images/background/4-blur.jpg) top fixed">
+            <!-- <section id="section-certificates" class="dark" data-bgimage="url(images/background/4-blur.jpg) top fixed">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 wow fadeInRight">
-                            <h4 class="title">I'm available for hire</h4>
-                            <h2 class="title">Contact Me</h2>
+                            <h4 class="title">This is my story</h4>
+                            <h2 class="title">My Certificates</h2>
                             <div class="title-underline"></div>
                         </div>
                     </div>
-                    <form name="contactForm" id="contact_form" class="row form-default form-dark wow fadeInRight"
-                        data-wow-delay=".25s" method="post" action="email.php">
-                        <div class="col-md-6">
-                            <div class="field-set">
-                                <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" />
-                                <div class="line-fx"></div>
-                            </div>
-                            <div class="field-set">
-                                <input type="text" name="email" id="email" class="form-control"
-                                    placeholder="Your Email" />
-                                <div class="line-fx"></div>
-                            </div>
-                            <div class="field-set">
-                                <input type="text" name="phone" id="phone" class="form-control"
-                                    placeholder="Your Phone" />
-                                <div class="line-fx"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="field-set">
-                                <textarea name="message" id="message" class="form-control"
-                                    placeholder="Your Message"></textarea>
-                                <div class="line-fx"></div>
+                    <div class="row wow fadeInRight" data-wow-delay=".25s">
+                        <div class="col-lg-4 col-md-6 mb30">
+                            <div class="bloglist item">
+                                <div class="post-content">
+                                    <div class="post-image d-hover-zoom">
+                                        <a class="image-popup" href="images/news/html.jpg">
+                                            <img alt="" src="images/news/html.jpg" />
+                                        </a>
+                                        <div class="post-info">
+                                            <div class="inner">
+                                                <span class="post-date">10 Dec 2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="spacer-single"></div>
-                        <div class="col-md-12 text-center">
-                            <div id="submit">
-                                <input type="submit" id="send_message" value="Send" class="btn btn-custom color-2" />
+                        <div class="col-lg-4 col-md-6 mb30">
+                            <div class="bloglist item">
+                                <div class="post-content">
+                                    <div class="post-image d-hover-zoom">
+                                        <a class="image-popup" href="images/news/css.jpg">
+                                            <img alt="" src="images/news/css.jpg" />
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <div id="mail_success" class="success">Your message has been sent successfully.</div>
-                            <div id="mail_fail" class="error">Sorry, error occured this time sending your message.</div>
                         </div>
-                    </form>
+                        <div class="col-lg-4 col-md-6 mb30">
+                            <div class="bloglist item">
+                                <div class="post-content">
+                                    <div class="post-image d-hover-zoom">
+                                        <a class="image-popup" href="images/news/js.jpg">
+                                            <img alt="" src="images/news/js.jpg" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb30">
+                            <div class="bloglist item">
+                                <div class="post-content">
+                                    <div class="post-image d-hover-zoom">
+                                        <a class="image-popup" href="images/news/dm.jpg">
+                                            <img alt="" src="images/news/dm.jpg" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb30">
+                            <div class="bloglist item">
+                                <div class="post-content">
+                                    <div style="height: 267px" class="post-image d-hover-zoom">
+                                        <a class="image-popup" href="images/news/Chingu.jpg">
+                                            <img alt="" src="images/news/Chingu.jpg" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb30">
+                            <div class="bloglist item">
+                                <div class="post-content">
+                                    <div class="post-image d-hover-zoom">
+                                        <a class="image-popup" href="images/news/seo.jpg">
+                                            <img alt="" src="images/news/seo.jpg" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb30">
+                            <div class="bloglist item">
+                                <div class="post-content">
+                                    <div style="height: 262px" class="post-image d-hover-zoom">
+                                        <a class="image-popup" href="images/news/css and js.jpg">
+                                            <img alt="" src="images/news/css and js.jpg" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb30">
+                            <div class="bloglist item">
+                                <div class="post-content">
+                                    <div style="height: 267px" class="post-image d-hover-zoom">
+                                        <a class="image-popup" href="images/news/femprow.jpg">
+                                            <img alt="" src="images/news/femprow.jpg" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb30">
+                            <div class="bloglist item">
+                                <div class="post-content">
+                                    <div class="post-image d-hover-zoom">
+                                        <a class="image-popup" href="images/news/ggarage.jpg">
+                                            <img alt="" src="images/news/ggarage.jpg" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb30">
+                            <div class="bloglist item">
+                                <div class="post-content">
+                                    <div class="post-image d-hover-zoom">
+                                        <a class="image-popup" href="images/news/0001.jpg">
+                                            <img alt="" src="images/news/0001.jpg" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb30">
+                            <div class="bloglist item">
+                                <div class="post-content">
+                                    <div style="height: 267px" class="post-image d-hover-zoom">
+                                        <a class="image-popup" href="images/news/Career-Development-.jpg">
+                                            <img alt="" src="images/news/Career-Development-.jpg" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
-            </section>
         </div>
-        <!-- content close -->
+        </section> -->
+        <!-- section close -->
+
+        <!-- section begin -->
+        <section id="section-contact" class="dark">
+            <div class="container">
+                <div class="row container bg-box">
+                    <div class="col-lg-12 wow fadeInRight">
+                        <h4 class="title">Contact</h4>
+                        <h2 class="title">Get In Touch</h2>
+                        <!-- <div class="title-underline"></div> -->
+                    </div>
+                </div>
+                <!-- <div class="row container justify-content-between align-items-center ">
+
+                <div class="col-lg-6 ml-4 wow fadeInRight" data-wow-delay=".5s">
+                    <h2><span class="id-color grad-head">Get In Touch</span></h2>
+                    <p>
+                        I provide expert WordPress development services, dedicated to providing high-quality web
+                        solutions for small and medium-sized businesses. My expertise encompasses all phases of
+                        WordPress design and maintenance, including WooCommerce integration for product
+                        modifications, shipping, API integrations, and troubleshooting. I create landing pages,
+                        product pages, shopping carts, and custom templates tailored to each client’s needs.
+
+                    </p>
+                    <div class="social-icons s-border sm-hide mysocial">
+                        <a href="mailto:minahilakhter@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/minahil-akhtar/"><i class="fa fa-whatsapp"
+                                aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/minahilakhtar2235/"><i
+                            class="fa fa-instagram fa-lg"></i></a>
+                    <a href="https://twitter.com/MinahilAkhtar9"><i
+                            class="fa fa-twitter fa-lg"></i></a>
+                    <a href="https://github.com/minahilakhtar"><i
+                            class="fa fa-github fa-lg"></i></a>  
+                       <ul class="info-list text-white">
+                            <li><span class="d_title">Full Name: </span><span class="d_value">Minahil Akhtar.</span>
+                            </li>
+                            <li><span class="d_title">Language: </span><span class="d_value">English, Urdu,
+                                    Punjabi.</span></li>
+                            <li><span class="d_title">Phone</span><span class="d_value">‪(815) 513-2697‬</span></li>
+                            <li><span class="d_title">Email: </span><span
+                                    class="d_value">minahilakhter@gmail.com</span></li>
+                        </ul>  
+                    </div>
+                </div>
+                <div class="col-lg-5 mb-sm-30 text-center">
+                    <div class="">
+
+                        <img src="images/background/contact.png" alt="" class="" width="370px">
+
+
+                    </div>
+                </div>
+            </div> -->
+
+                <div class="expertise-showcase ">
+                    <div class="expertise-content mt-3">
+                        <h4 class="section-subtitle">WHY YOU SHOULD WORK WITH ME?</h4>
+                        <h1 class="expertise-title">Transform Your Business with <span class=" grad-head">My Expertise
+                                and Guidance</span></h1>
+                        <div class="expertise-image">
+                            <img src="./images/background/contact-2.png" alt="Expert Portrait">
+
+                        </div>
+                    </div>
+                    <div class="expert-details-cover">
+                        <div class="expertise-details ">
+                            <div class="detail-item mr-5">
+                                <i class="fa fa-paint-brush"></i>
+                                <div class="progress-bar"></div>
+                            </div>
+                            <div class="detail-item-right">
+                                <span class="icon-trending"></span>
+                                <h3 class="detail-title">Design</h3>
+                                <p class="detail-text"> Every great website begins with a strategy, I create intuitive, user-friendly designs ensuring seamless engagement that align with your brand. </p>
+                            </div>
+
+                        </div>
+                        <div class="expertise-details ">
+                            <div class="detail-item mr-5">
+                                <i class="fa fa-code"></i>
+                                <div class="progress-bar"></div>
+                            </div>
+                            <div class="detail-item-right">
+                                <span class="icon-trending"></span>
+                                <h3 class="detail-title">develop</h3>
+                                <p class="detail-text">Using modern technologies, I build responsive, scalable, and high-performance websites. Whether it's a custom-coded solution or a CMS-based platform.</p>
+
+                            </div>
+
+                        </div>
+                        <div class="expertise-details ">
+
+                            <div class="detail-item mr-5">
+                                <i class="fa fa-rocket"></i>
+                                <div class="progress-bar"></div>
+                            </div>
+                            <div class="detail-item-right">
+                                <span class="icon-trending"></span>
+                                <h3 class="detail-title">Deliver</h3>
+                                <p class="detail-text">From testing and deployment to post-launch support, I ensure a smooth transition from development to a fully operational website that drives results and growth.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="text-center d-flex justify-content-center after-contact-text mt-5 contact-upper">
+                    <div style="width: 60%;" class="contact-footer">
+                        <p>
+                          
+
+                            <span style="color: white;">Collaborating with me</span> unlocks endless opportunities for your business. With <span style="color: white;">proven
+                            experience, deep industry insight</span>, and a dedication to helping entrepreneurs succeed, I
+                            provide <span style="color: white;">expert guidance and innovative solutions </span>to deliver remarkable results.
+
+
+                        </p><br>
+                        <span style="color: #44C5E5; font-size: 23px; font-weight: 500;">
+                            Ready to elevate your digital presence to the next level?
+                        </span>
+                        <div class="social-icons-contact mt-3 pb-4 ">
+                            <a href="mailto:minahilakhter@gmail.com"><i class="fa fa-envelope"
+                                    aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/minahil-akhtar/"><i class="fa fa-whatsapp"></i></a>
+                            <a href="https://www.linkedin.com/in/minahil-akhtar/"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/minahilakhtar2235/"><i class="fa fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- content close -->
     </div>
 
     <!-- Javascript Files
@@ -1312,6 +2189,22 @@
             document.getElementById('myModal').style.display = 'none';
             document.getElementById('videoIframe').src = '';
         }
+
+
+        $(document).ready(function () {
+            $(".review-boxes-upper").slice(0, 2).show();
+            $("#load-more").click(function (e) {
+                e.preventDefault();
+                $(".review-boxes-upper:hidden").slice(0, 1).fadeIn("slow");
+                // or make ajax call and append 
+
+                if ($(".review-boxes-upper:hidden").length == 0) {
+                    $("#load-more").fadeOut("slow");
+                }
+            });
+        })
+
+
     </script>
 
 </body>
