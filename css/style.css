@@ -13836,10 +13836,11 @@ box-shadow: rgb(223 223 223 / 20%) 0px 7px 29px 0px;
         padding-top: 5rem;
     }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 345px) {
     .skills-grid {
-        grid-template-columns: repeat(auto-fit, minmax(134px, 1fr));
-        }
+        grid-template-columns: repeat(auto-fit, minmax(117px, 1fr));
+     margin: auto;
+    }
 }  
 @media only screen and (min-width: 766px) and (max-width: 990px){
 .portfolio{
@@ -13852,6 +13853,10 @@ box-shadow: rgb(223 223 223 / 20%) 0px 7px 29px 0px;
     }
 }
 @media only screen and (max-width: 400px) {
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(134px, 1fr));
+        margin: auto;
+        }
     .portfolio{
         height: 9367px !important
     }
