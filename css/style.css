@@ -13830,7 +13830,11 @@ box-shadow: rgb(223 223 223 / 20%) 0px 7px 29px 0px;
         padding-top: 5rem;
     }
 }
-    
+@media only screen and (max-width: 400px) {
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
+    }
+}  
 @media only screen and (min-width: 766px) and (max-width: 990px){
 .portfolio{
     height: 2566px !important;
