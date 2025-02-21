@@ -13783,6 +13783,9 @@ box-shadow: rgb(223 223 223 / 20%) 0px 7px 29px 0px;
         padding: 0;
         padding-bottom: 20px;
     }
+    .about-sec-main .spacer-80{
+        display: none;
+    }
 
     .contact-upper{
         margin-top: 5px !important;
