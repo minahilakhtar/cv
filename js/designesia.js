@@ -1383,7 +1383,7 @@
 
          jQuery('section').each(function() {
             var h = jQuery(this).css('height');
-            jQuery(this).attr('data-height',h);
+            // jQuery(this).attr('data-height',h);
          });
          
 
@@ -1467,7 +1467,7 @@
          jQuery(".scrollnav a, .scroll-to").on("click", function(n) {
             var url = jQuery(this).attr('href');
             menu_click(url);
-            jQuery(url).css('height',jQuery(url).attr('data-height'));
+            // jQuery(url).css('height',jQuery(url).attr('data-height'));    
          });
 
          jQuery("#btn-exit").on("click", function(evn) {
@@ -1502,7 +1502,7 @@
 			 grid_gallery();
              jQuery('section').each(function() {
                 var h = jQuery(this).css('height');
-                jQuery(this).attr('data-height',h);
+                // jQuery(this).attr('data-height',h);
              });    
          });
          /* --------------------------------------------------
