@@ -13803,6 +13803,9 @@ box-shadow: rgb(223 223 223 / 20%) 0px 7px 29px 0px;
         top: 0;
         right: 41px;
       }
+      .animated-button-cover{
+    padding-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 650px){
