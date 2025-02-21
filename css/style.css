@@ -13809,6 +13809,15 @@ box-shadow: rgb(223 223 223 / 20%) 0px 7px 29px 0px;
       .animated-button-cover{
     padding-bottom: 20px;
     }
+	 .skills-grid {
+        display: flex !important;
+                margin: auto;
+                flex-wrap: wrap;
+                justify-content: center;
+        }
+        .skill-card{
+            flex: 46%;
+        }
 }
 
 @media only screen and (max-width: 650px){
@@ -13835,6 +13844,15 @@ box-shadow: rgb(223 223 223 / 20%) 0px 7px 29px 0px;
     .animated .sub-text{
         padding-top: 5rem;
     }
+	 .skills-grid {
+        display: flex !important;
+                margin: auto;
+                flex-wrap: wrap;
+                justify-content: center;
+        }
+        .skill-card{
+            flex: 46%;
+        }
 }
 @media only screen and (max-width: 345px) {
     .skills-grid {
