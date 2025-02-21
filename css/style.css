@@ -13892,8 +13892,8 @@ box-shadow: rgb(223 223 223 / 20%) 0px 7px 29px 0px;
                 flex-wrap: wrap;
                 justify-content: center;
         }
-        .skill-card{
-            flex: 46%;
+        .skill-card {
+            flex: 31%;
         }
     .portfolio{
         height: 9367px !important
