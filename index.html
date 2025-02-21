@@ -108,7 +108,7 @@
                 <div class="container pt-5">
                     <div class="d-flex align-items-center main-inner">
                         <div class="col-lg-6 wow fadeIn px-0" data-wow-delay=".25s">
-                            <p class="sub-text text-light pt-4">Accelerate your online presence with my</p>
+                            <p class="sub-text text-light pt-5">Accelerate your online presence with my</p>
                             <div class="spacer-half"></div>
                             <div style="margin-bottom: 2rem;" class="typed-words big">
                                 Cutting-Edge Expertise as a
@@ -328,62 +328,73 @@
                         <div class="review-container">
                             <!-- Initially Visible Images -->
                             <div class="review-boxes-upper">
-
                                 <div class="review-boxes d-flex justify-content-center py-4">
                                     <div class="review-box video-grad">
-                                        <img style=" width: 585px;" src="./images/people/written1.jpg" alt="">
+                                        <a href="#" onclick="openCustomModal('./images/people/written1.jpg')">
+                                            <img style="width: 585px;" src="./images/people/written1.jpg" alt="">
+                                        </a>
                                     </div>
                                     <div class="review-box video-grad">
-                                        <img style="width: 585px;" src="./images/people/written2.jpg" alt="">
+                                        <a href="#" onclick="openCustomModal('./images/people/written2.jpg')">
+                                            <img style="width: 585px;" src="./images/people/written2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Additional Image Rows -->
+                            <div class="review-boxes-upper">
+                                <div class="review-boxes d-flex justify-content-center py-4">
+                                    <div class="review-box video-grad">
+                                        <a href="#" onclick="openCustomModal('./images/people/written3.jpg')">
+                                            <img style="width: 585px;" src="./images/people/written3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="review-box video-grad">
+                                        <a href="#" onclick="openCustomModal('./images/people/written4.jpg')">
+                                            <img style="width: 585px;" src="./images/people/written4.jpg" alt="">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="review-boxes-upper">
                                 <div class="review-boxes d-flex justify-content-center py-4">
                                     <div class="review-box video-grad">
-                                        <img style="width: 585px;" src="./images/people/written3.jpg" alt="">
+                                        <a href="#" onclick="openCustomModal('./images/people/written5.jpg')">
+                                            <img style="width: 585px;" src="./images/people/written5.jpg" alt="">
+                                        </a>
                                     </div>
                                     <div class="review-box video-grad">
-                                        <img style="width: 585px;" src="./images/people/written4.jpg" alt="">
+                                        <a href="#" onclick="openCustomModal('./images/people/written6.jpg')">
+                                            <img style="width: 585px;" src="./images/people/written6.jpg" alt="">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="review-boxes-upper">
                                 <div class="review-boxes d-flex justify-content-center py-4">
                                     <div class="review-box video-grad">
-                                        <img style="width: 585px;" src="./images/people/written5.jpg" alt="">
+                                        <a href="#" onclick="openCustomModal('./images/people/written7.jpg')">
+                                            <img style="width: 585px;" src="./images/people/written7.jpg" alt="">
+                                        </a>
                                     </div>
                                     <div class="review-box video-grad">
-                                        <img style="width: 585px;" src="./images/people/written6.jpg" alt="">
+                                        <a href="#" onclick="openCustomModal('./images/people/written8.jpg')">
+                                            <img style="width: 585px;" src="./images/people/written8.jpg" alt="">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="review-boxes-upper">
-                                <div class="review-boxes d-flex justify-content-center py-4">
-                                    <div class="review-box video-grad">
-                                        <img style="width: 585px;" src="./images/people/written7.jpg" alt="">
-                                    </div>
-                                    <div class="review-box video-grad">
-                                        <img style="width: 585px;" src="./images/people/written8.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-
-
+                        
                             <!-- Load More Button -->
-                            <!-- <div class="button-wrap">
-                                <button id="load-more">Load More</button>
-                            </div> -->
-                            <div class="align-self-center ml-auto  py-4">
-
+                            <div class="align-self-center ml-auto py-4">
                                 <div class="align-self-center ml-auto home-menu-btn" style="background-size: cover;">
                                     <div class="social-icons-contact mysocial" style="cursor: pointer;">
-                                        <a id="load-more"> Load More</i></a>
+                                        <a id="load-more">Load More</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
 
 
 
@@ -393,6 +404,11 @@
                                 <iframe id="videoIframe" width="100%" height="100%" frameborder="0"
                                     allowfullscreen></iframe>
                             </div>
+                        </div>
+                        <!-- Custom Modal -->
+                        <div id="customImageModal" class="custom-modal">
+                            <span class="custom-close" onclick="closeCustomModal()">&times;</span>
+                            <img class="custom-modal-content" id="customModalImage">
                         </div>
                         <ul class="circles">
                             <li></li>
@@ -605,10 +621,13 @@
                             <h1><span>Let's Explore Popular </span><span class=" grad-head">Skills & Experience</span>
                             </h1>
                             <p>
-                                I specialize in MERN Stack development, delivering high-performance, scalable, and innovative web applications. With a strong focus on efficiency and user experience, I leverage modern technologies to create seamless and impactful digital solutions.
+                                I specialize in MERN Stack development, delivering high-performance, scalable, and
+                                innovative web applications. With a strong focus on efficiency and user experience, I
+                                leverage modern technologies to create seamless and impactful digital solutions.
                             </p>
                             <p>
-                                Let’s collaborate to turn your ideas into powerful, user-friendly web applications that drive results!
+                                Let’s collaborate to turn your ideas into powerful, user-friendly web applications that
+                                drive results!
                             </p>
                         </div>
                         <div class="skills-grid">
@@ -639,11 +658,11 @@
                         </div>
                     </div>
                     <div class=" row container">
-                       
+
                         <div class="row">
-                           
+
                         </div>
-                        
+
                     </div>
                     <div class="spacer-50"></div>
                     <div class=" count-sec" data-bgimage="url(images/background/bg.webp)">
@@ -1624,8 +1643,8 @@
                                 <!-- gallery item -->
                                 <div class="item col-md-4 mb30 gallery-item wordpress website"
                                     data-value="project-details-image.html">
-                                    <a class="picframe" href="images/portfolio/takhayyul.com.jpg"
-                                        title="Takhayyul" data-source="https://takhayyul.com/">
+                                    <a class="picframe" href="images/portfolio/takhayyul.com.jpg" title="Takhayyul"
+                                        data-source="https://takhayyul.com/">
                                         <span class="overlay">
                                             <span class="d-title">Takhayyul</span>
                                         </span>
@@ -1683,8 +1702,8 @@
                                 <!-- gallery item -->
                                 <div class="item col-md-4 mb30 gallery-item wordpress website"
                                     data-value="project-details-image.html">
-                                    <a class="picframe" href="images/portfolio/writerly.uk.jpg"
-                                        title="Writerly" data-source="https://www.writerly.uk/">
+                                    <a class="picframe" href="images/portfolio/writerly.uk.jpg" title="Writerly"
+                                        data-source="https://www.writerly.uk/">
                                         <span class="overlay">
                                             <span class="d-title">Writerly</span>
                                         </span>
@@ -2024,19 +2043,19 @@
                 </div>
         </div>
         </section> -->
-        <!-- section close -->
+            <!-- section close -->
 
-        <!-- section begin -->
-        <section id="section-contact" class="dark">
-            <div class="container">
-                <div class="row container bg-box">
-                    <div class="col-lg-12 wow fadeInRight">
-                        <h4 class="title">Contact</h4>
-                        <h2 class="title">Get In Touch</h2>
-                        <!-- <div class="title-underline"></div> -->
+            <!-- section begin -->
+            <section id="section-contact" class="dark">
+                <div class="container">
+                    <div class="row container bg-box">
+                        <div class="col-lg-12 wow fadeInRight">
+                            <h4 class="title">Contact</h4>
+                            <h2 class="title">Get In Touch</h2>
+                            <!-- <div class="title-underline"></div> -->
+                        </div>
                     </div>
-                </div>
-                <!-- <div class="row container justify-content-between align-items-center ">
+                    <!-- <div class="row container justify-content-between align-items-center ">
 
                 <div class="col-lg-6 ml-4 wow fadeInRight" data-wow-delay=".5s">
                     <h2><span class="id-color grad-head">Get In Touch</span></h2>
@@ -2079,85 +2098,95 @@
                 </div>
             </div> -->
 
-                <div class="expertise-showcase ">
-                    <div class="expertise-content mt-3">
-                        <h4 class="section-subtitle">WHY YOU SHOULD WORK WITH ME?</h4>
-                        <h1 class="expertise-title">Transform Your Business with <span class=" grad-head">My Expertise
-                                and Guidance</span></h1>
-                        <div class="expertise-image">
-                            <img src="./images/background/contact-2.png" alt="Expert Portrait">
+                    <div class="expertise-showcase ">
+                        <div class="expertise-content mt-3">
+                            <h4 class="section-subtitle">WHY YOU SHOULD WORK WITH ME?</h4>
+                            <h1 class="expertise-title">Transform Your Business with <span class=" grad-head">My
+                                    Expertise
+                                    and Guidance</span></h1>
+                            <div class="expertise-image">
+                                <img src="./images/background/contact-2.png" alt="Expert Portrait">
 
+                            </div>
+                        </div>
+                        <div class="expert-details-cover">
+                            <div class="expertise-details ">
+                                <div class="detail-item mr-5">
+                                    <i class="fa fa-paint-brush"></i>
+                                    <div class="progress-bar"></div>
+                                </div>
+                                <div class="detail-item-right">
+                                    <span class="icon-trending"></span>
+                                    <h3 class="detail-title">Design</h3>
+                                    <p class="detail-text"> Every great website begins with a strategy, I create
+                                        intuitive, user-friendly designs ensuring seamless engagement that align with
+                                        your brand. </p>
+                                </div>
+
+                            </div>
+                            <div class="expertise-details ">
+                                <div class="detail-item mr-5">
+                                    <i class="fa fa-code"></i>
+                                    <div class="progress-bar"></div>
+                                </div>
+                                <div class="detail-item-right">
+                                    <span class="icon-trending"></span>
+                                    <h3 class="detail-title">develop</h3>
+                                    <p class="detail-text">Using modern technologies, I build responsive, scalable, and
+                                        high-performance websites. Whether it's a custom-coded solution or a CMS-based
+                                        platform.</p>
+
+                                </div>
+
+                            </div>
+                            <div class="expertise-details ">
+
+                                <div class="detail-item mr-5">
+                                    <i class="fa fa-rocket"></i>
+                                    <div class="progress-bar"></div>
+                                </div>
+                                <div class="detail-item-right">
+                                    <span class="icon-trending"></span>
+                                    <h3 class="detail-title">Deliver</h3>
+                                    <p class="detail-text">From testing and deployment to post-launch support, I ensure
+                                        a smooth transition from development to a fully operational website that drives
+                                        results and growth.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="text-center d-flex justify-content-center after-contact-text mt-5 contact-upper">
+                        <div style="width: 60%;" class="contact-footer">
+                            <p>
+
+
+                                <span style="color: white;">Collaborating with me</span> unlocks endless opportunities
+                                for your business. With <span style="color: white;">proven
+                                    experience, deep industry insight</span>, and a dedication to helping entrepreneurs
+                                succeed, I
+                                provide <span style="color: white;">expert guidance and innovative solutions </span>to
+                                deliver remarkable results.
+
+
+                            </p><br>
+                            <span style="color: #44C5E5; font-size: 23px; font-weight: 500;">
+                                Ready to elevate your digital presence to the next level?
+                            </span>
+                            <div class="social-icons-contact mt-3 pb-4 ">
+                                <a href="mailto:minahilakhter@gmail.com"><i class="fa fa-envelope"
+                                        aria-hidden="true"></i></a>
+                                <a href="https://www.linkedin.com/in/minahil-akhtar/"><i class="fa fa-whatsapp"></i></a>
+                                <a href="https://www.linkedin.com/in/minahil-akhtar/"><i class="fa fa-linkedin"></i></a>
+                                <a href="https://www.facebook.com/minahilakhtar2235/"><i class="fa fa-facebook"></i></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="expert-details-cover">
-                        <div class="expertise-details ">
-                            <div class="detail-item mr-5">
-                                <i class="fa fa-paint-brush"></i>
-                                <div class="progress-bar"></div>
-                            </div>
-                            <div class="detail-item-right">
-                                <span class="icon-trending"></span>
-                                <h3 class="detail-title">Design</h3>
-                                <p class="detail-text"> Every great website begins with a strategy, I create intuitive, user-friendly designs ensuring seamless engagement that align with your brand. </p>
-                            </div>
-
-                        </div>
-                        <div class="expertise-details ">
-                            <div class="detail-item mr-5">
-                                <i class="fa fa-code"></i>
-                                <div class="progress-bar"></div>
-                            </div>
-                            <div class="detail-item-right">
-                                <span class="icon-trending"></span>
-                                <h3 class="detail-title">develop</h3>
-                                <p class="detail-text">Using modern technologies, I build responsive, scalable, and high-performance websites. Whether it's a custom-coded solution or a CMS-based platform.</p>
-
-                            </div>
-
-                        </div>
-                        <div class="expertise-details ">
-
-                            <div class="detail-item mr-5">
-                                <i class="fa fa-rocket"></i>
-                                <div class="progress-bar"></div>
-                            </div>
-                            <div class="detail-item-right">
-                                <span class="icon-trending"></span>
-                                <h3 class="detail-title">Deliver</h3>
-                                <p class="detail-text">From testing and deployment to post-launch support, I ensure a smooth transition from development to a fully operational website that drives results and growth.</p>
-                            </div>
-
-                        </div>
-                    </div>
-
                 </div>
-                <div class="text-center d-flex justify-content-center after-contact-text mt-5 contact-upper">
-                    <div style="width: 60%;" class="contact-footer">
-                        <p>
-                          
-
-                            <span style="color: white;">Collaborating with me</span> unlocks endless opportunities for your business. With <span style="color: white;">proven
-                            experience, deep industry insight</span>, and a dedication to helping entrepreneurs succeed, I
-                            provide <span style="color: white;">expert guidance and innovative solutions </span>to deliver remarkable results.
-
-
-                        </p><br>
-                        <span style="color: #44C5E5; font-size: 23px; font-weight: 500;">
-                            Ready to elevate your digital presence to the next level?
-                        </span>
-                        <div class="social-icons-contact mt-3 pb-4 ">
-                            <a href="mailto:minahilakhter@gmail.com"><i class="fa fa-envelope"
-                                    aria-hidden="true"></i></a>
-                            <a href="https://www.linkedin.com/in/minahil-akhtar/"><i class="fa fa-whatsapp"></i></a>
-                            <a href="https://www.linkedin.com/in/minahil-akhtar/"><i class="fa fa-linkedin"></i></a>
-                            <a href="https://www.facebook.com/minahilakhtar2235/"><i class="fa fa-facebook"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <!-- content close -->
+            </section>
+        </div>
+        <!-- content close -->
     </div>
 
     <!-- Javascript Files
@@ -2203,6 +2232,14 @@
                 }
             });
         })
+        function openCustomModal(imageSrc) {
+        document.getElementById("customModalImage").src = imageSrc;
+        document.getElementById("customImageModal").style.display = "block";
+    }
+
+    function closeCustomModal() {
+        document.getElementById("customImageModal").style.display = "none";
+    }
 
 
     </script>
