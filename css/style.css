@@ -13672,7 +13672,7 @@ box-shadow: rgb(223 223 223 / 20%) 0px 7px 29px 0px;
         max-width: 100%;
     }
     .count-sec h1 {
-        font-size: 37px;
+        font-size: 30px;
         line-height: 52px;
     }
     .count-sec-inner {
@@ -13686,6 +13686,9 @@ box-shadow: rgb(223 223 223 / 20%) 0px 7px 29px 0px;
     .count-numbers{
         width: 90% !important;
         padding: 15px 12px 0px 12px;
+    }
+    .count-numbers p{
+        font-size: 14px;
     }
     .title-underline{
         margin-bottom: 50px !important;
@@ -13835,8 +13838,8 @@ box-shadow: rgb(223 223 223 / 20%) 0px 7px 29px 0px;
 }
 @media only screen and (max-width: 400px) {
     .skills-grid {
-        grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
-    }
+        grid-template-columns: repeat(auto-fit, minmax(134px, 1fr));
+        }
 }  
 @media only screen and (min-width: 766px) and (max-width: 990px){
 .portfolio{
