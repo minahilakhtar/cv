@@ -13561,10 +13561,6 @@ box-shadow: rgb(223 223 223 / 20%) 0px 7px 29px 0px;
   }
   
 
-  
-
- 
-
 @media only screen and (min-width: 900px){
     .about-main{
     flex: 1 0 49.666667%;
@@ -13641,7 +13637,7 @@ box-shadow: rgb(223 223 223 / 20%) 0px 7px 29px 0px;
     .bg-box {
         margin: auto;
         margin-bottom: 30px;
-    width: 363px;
+        width: 93%;
     padding-bottom: 16px;
     padding-top: 30px;
     }
@@ -13807,6 +13803,32 @@ box-shadow: rgb(223 223 223 / 20%) 0px 7px 29px 0px;
         top: 0;
         right: 41px;
       }
+}
+
+@media only screen and (max-width: 650px){
+    .skills-section {
+        flex-direction: column;
+    }
+    .skills-text {
+        max-width: 100%;
+    }
+    .skills-grid {
+        max-width: 100%;
+    }
+
+    .bg-box {
+        width: 93%;
+    }
+
+    #section-main .spacer-half{
+        display: none;
+    }
+    .typed, .typed-strings {
+        font-size: 28px;
+    }
+    .animated .sub-text{
+        padding-top: 5rem;
+    }
 }
     
 @media only screen and (min-width: 766px) and (max-width: 990px){
