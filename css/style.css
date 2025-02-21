@@ -13838,9 +13838,14 @@ box-shadow: rgb(223 223 223 / 20%) 0px 7px 29px 0px;
 }
 @media only screen and (max-width: 345px) {
     .skills-grid {
-        grid-template-columns: repeat(auto-fit, minmax(117px, 1fr));
-     margin: auto;
-    }
+        display: flex !important;
+                margin: auto;
+                flex-wrap: wrap;
+                justify-content: center;
+        }
+        .skill-card{
+            flex: 46%;
+        }
 }  
 @media only screen and (min-width: 766px) and (max-width: 990px){
 .portfolio{
