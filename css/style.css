@@ -13717,6 +13717,7 @@ box-shadow: rgb(223 223 223 / 20%) 0px 7px 29px 0px;
     }
     .website {
         padding-left: 10px;
+        display: contents;
         padding-right: 26px;
     }
     #section-portfolio .gallery-item .picframe {
@@ -13822,7 +13823,7 @@ box-shadow: rgb(223 223 223 / 20%) 0px 7px 29px 0px;
         animation: scrollYm 12s linear infinite;
       }
       .image-sec-cover .image-container{
-        width: 110%;
+        width: 106%;
       }
       .custom-modal {
         top: 27%;
@@ -13838,6 +13839,16 @@ box-shadow: rgb(223 223 223 / 20%) 0px 7px 29px 0px;
     .skill-card{
         padding-bottom: 0px;
 	    flex: 31%
+    }
+    #section-portfolio{
+        height: 100% !important;
+        min-height: 100%;
+    }
+    #gallery {
+        height: 100% !important;
+        min-height: 100%;
+        gap: 20px;  
+        padding-bottom: 70px;
     }
 }
 
@@ -14056,7 +14067,6 @@ header div#logo {
       border-radius: 50%;
     }
   }
-
 
 
 
