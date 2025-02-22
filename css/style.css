@@ -13837,6 +13837,7 @@ box-shadow: rgb(223 223 223 / 20%) 0px 7px 29px 0px;
     }
     .skill-card{
         padding-bottom: 0px;
+	    flex: 31%
     }
 }
 
