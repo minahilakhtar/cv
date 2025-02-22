@@ -13850,6 +13850,10 @@ box-shadow: rgb(223 223 223 / 20%) 0px 7px 29px 0px;
     }
     .skills-grid {
         max-width: 100%;
+        display: flex !important;
+                margin: auto;
+                flex-wrap: wrap;
+                justify-content: center;
     }
 
     .bg-box {
